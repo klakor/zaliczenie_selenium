@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2cfa3d75-f852-4305-ac36-db208549941c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/inpost_rejestracja.py" beforeDir="false" afterPath="$PROJECT_DIR$/inpost_rejestracja.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1bE7n54wLF0Qvggfq33bOCb728w" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="inpost_rejestracja" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="zaliczenie_selenium" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python3.6" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/inpost_rejestracja.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.inpost_rejestracja" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2cfa3d75-f852-4305-ac36-db208549941c" name="Default Changelist" comment="" />
+      <created>1588185563946</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588185563946</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="655" y="86" width="666" height="819" key="#inpost_rejestracja" timestamp="1588185661874">
+      <screen x="67" y="27" width="1853" height="940" />
+    </state>
+    <state x="655" y="86" width="666" height="819" key="#inpost_rejestracja/67.27.1853.940@67.27.1853.940" timestamp="1588185661874" />
+    <state width="1328" height="506" key="DebuggerActiveHint" timestamp="1588185702024">
+      <screen x="67" y="27" width="1853" height="940" />
+    </state>
+    <state width="1328" height="506" key="DebuggerActiveHint/67.27.1853.940@67.27.1853.940" timestamp="1588185702024" />
+    <state width="1830" height="298" key="GridCell.Tab.0.bottom" timestamp="1588185664213">
+      <screen x="67" y="27" width="1853" height="940" />
+    </state>
+    <state width="1830" height="298" key="GridCell.Tab.0.bottom/67.27.1853.940@67.27.1853.940" timestamp="1588185664213" />
+    <state width="1830" height="298" key="GridCell.Tab.0.center" timestamp="1588185664212">
+      <screen x="67" y="27" width="1853" height="940" />
+    </state>
+    <state width="1830" height="298" key="GridCell.Tab.0.center/67.27.1853.940@67.27.1853.940" timestamp="1588185664212" />
+    <state width="1830" height="298" key="GridCell.Tab.0.left" timestamp="1588185664212">
+      <screen x="67" y="27" width="1853" height="940" />
+    </state>
+    <state width="1830" height="298" key="GridCell.Tab.0.left/67.27.1853.940@67.27.1853.940" timestamp="1588185664212" />
+    <state width="1830" height="298" key="GridCell.Tab.0.right" timestamp="1588185664213">
+      <screen x="67" y="27" width="1853" height="940" />
+    </state>
+    <state width="1830" height="298" key="GridCell.Tab.0.right/67.27.1853.940@67.27.1853.940" timestamp="1588185664213" />
+    <state width="1830" height="298" key="GridCell.Tab.1.bottom" timestamp="1588185686577">
+      <screen x="67" y="27" width="1853" height="940" />
+    </state>
+    <state width="1830" height="298" key="GridCell.Tab.1.bottom/67.27.1853.940@67.27.1853.940" timestamp="1588185686577" />
+    <state width="1830" height="298" key="GridCell.Tab.1.center" timestamp="1588185686576">
+      <screen x="67" y="27" width="1853" height="940" />
+    </state>
+    <state width="1830" height="298" key="GridCell.Tab.1.center/67.27.1853.940@67.27.1853.940" timestamp="1588185686576" />
+    <state width="1830" height="298" key="GridCell.Tab.1.left" timestamp="1588185686574">
+      <screen x="67" y="27" width="1853" height="940" />
+    </state>
+    <state width="1830" height="298" key="GridCell.Tab.1.left/67.27.1853.940@67.27.1853.940" timestamp="1588185686574" />
+    <state width="1830" height="298" key="GridCell.Tab.1.right" timestamp="1588185686576">
+      <screen x="67" y="27" width="1853" height="940" />
+    </state>
+    <state width="1830" height="298" key="GridCell.Tab.1.right/67.27.1853.940@67.27.1853.940" timestamp="1588185686576" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/inpost_rejestracja.py</url>
+          <line>103</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

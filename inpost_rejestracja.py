@@ -7,7 +7,7 @@ from selenium.webdriver.support.ui import Select
 from selenium.webdriver import ActionChains
 from selenium.webdriver.support import expected_conditions as EC
 from time import sleep
-from selenium.webdriver.support.ui import Select
+#from selenium.webdriver.support.ui import Select
 from selenium.webdriver.common.keys import Keys
 
 # Credentials:
@@ -26,7 +26,9 @@ s_popUp = ("//div[@id='popup-window']")
 s_popUpClose = ("//a[@id='popup-close']")
 s_logIn = ("//button[@class='btn--primary -login']")
 s_manager = ("Manager Paczek")
+
 s_registration = ("//a[@class='register']")
+
 s_email = ("//input[@id='input_email']")
 s_name = ("//input[@id='input_first_name']")
 s_phone = ("//input[@id='input_customer_telephone']")
@@ -97,6 +99,16 @@ class InPostRegistration(unittest.TestCase):
 
         WebDriverWait(self.driver, 30).until(EC.presence_of_element_located((By.XPATH, s_checkbox))).click()
 
+        # 7. Find 'Zarejestruj sie' and click it
+        WebDriverWait(self.driver, 30).until(EC.presence_of_element_located((By.XPATH, s_register))).click()
+
+        errors = driver.find_elements_by_xpath("//ul[@class='errors']//li")
+        visible_errors=[]
+        for e in errors:
+            if e.is_displayed():
+                visible_errors.append(e.text)
+
+        assert visible_errors == ["Pole wymagane"]
 
         sleep(5)
 
