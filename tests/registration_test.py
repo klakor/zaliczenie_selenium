@@ -48,7 +48,7 @@ class RegistrationTest(BaseTest):
         # Kliknij ZAREJESTRUJ [ NIE STOSOWAĆ DLA PRZYPADKU POZYTYWNEGO !!!!]
         rp.send_registration_form()
         # Sprawdź poprawność wyświetlanych błędów
-        rp.verify_visible_errors(["Pole wymagane"])
+        rp.verify_errors(["Pole wymagane"])
 
 if __name__=="__main__":
     unittest.main(verbosity=2)
