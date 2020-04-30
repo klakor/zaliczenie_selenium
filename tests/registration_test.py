@@ -1,4 +1,5 @@
-from tests.base_test import BaseTest
+#from tests.base_test import BaseTest
+from base_test import BaseTest
 from pages.home_page import HomePage
 from pages.login_page import LoginPage
 from pages.register_page import RegisterPage
@@ -24,7 +25,7 @@ class RegistrationTest(BaseTest):
     """
     @data(*get_data("inpost_incorrect_emails.csv"))
     @unpack
-    def test_incorrect_email(self, email, name, phone, zipcode, password, repeat_password, paczkomat, error):
+    def test_incorrect_email(self, email, name, phone, zipcode, password, repeat_password, paczkomat):
         """Test rejestracji nowego użytkownika - błędny e-mail"""
         hp = HomePage(self.driver)
         hp.close_covid_popup()
