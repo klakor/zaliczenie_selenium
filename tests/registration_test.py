@@ -26,8 +26,6 @@ class RegistrationTest(BaseTest):
     @unpack
     def test_incorrect_email(self, email, name, phone, zipcode, password, repeat_password, paczkomat, error):
         """Test rejestracji nowego użytkownika - błędny e-mail"""
-        # Tworzę instancję klasy HomePage, dzięki czemu zyskuję możliwość
-        # korzystania z metod w niej zawartych
         hp = HomePage(self.driver)
         hp.close_covid_popup()
         hp.click_sign_in_btn()
@@ -49,7 +47,7 @@ class RegistrationTest(BaseTest):
         # Kliknij ZAREJESTRUJ [ NIE STOSOWAĆ DLA PRZYPADKU POZYTYWNEGO !!!!]
         rp.send_registration_form()
         # Sprawdź poprawność wyświetlanych błędów
-        rp.verify_errors(error)
+        rp.verify_visible_errors(["Pole wymagane"])
 
 if __name__=="__main__":
     unittest.main(verbosity=2)
