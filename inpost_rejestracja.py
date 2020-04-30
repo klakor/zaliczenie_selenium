@@ -7,7 +7,6 @@ from selenium.webdriver.support.ui import Select
 from selenium.webdriver import ActionChains
 from selenium.webdriver.support import expected_conditions as EC
 from time import sleep
-#from selenium.webdriver.support.ui import Select
 from selenium.webdriver.common.keys import Keys
 
 # Credentials:
