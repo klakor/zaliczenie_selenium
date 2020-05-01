@@ -44,7 +44,9 @@ class RegisterPage:
         for e in error_notices:
             if e.is_displayed():
                 visible_errors.append(e.text)
+        print("Visible error:")
         print(visible_errors)
+        print("Error")
         print(error)
         assert visible_errors == error
         sleep(5)

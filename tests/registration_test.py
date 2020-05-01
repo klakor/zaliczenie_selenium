@@ -23,10 +23,97 @@ class RegistrationTest(BaseTest):
     """
     Testy strony Rejestracja
     """
-    @data(*get_data("inpost_incorrect_emails.csv"))
+    # @data(*get_data("incorrect_emails.csv"))
+    # @unpack
+    # def test_incorrect_email(self, email, name, phone, zipcode, password, repeat_password, paczkomat, error):
+    #     """Test rejestracji nowego użytkownika - błędny e-mail"""
+    #     expected_errors = [error]
+    #     if "|" in error:
+    #         expected_errors = error.split("|")
+    #
+    #     hp = HomePage(self.driver)
+    #     hp.close_covid_popup()
+    #     hp.click_sign_in_btn()
+    #     hp.click_manager_paczek_btn()
+    #     hp.switch_driver_to_active_tab()
+    #
+    #     lp = LoginPage(self.driver)
+    #     lp.click_register_btn()
+    #
+    #     rp = RegisterPage(self.driver)
+    #     rp.fill_email(email)
+    #     rp.fill_name(name)
+    #     rp.fill_phone(phone)
+    #     rp.fill_zipcode(zipcode)
+    #     rp.fill_password(password)
+    #     rp.repeat_password(repeat_password)
+    #     rp.fill_paczkomat(paczkomat)
+    #     rp.agree_to_newsletter()
+    #     rp.send_registration_form()     # [ NIE STOSOWAĆ DLA PRZYPADKU POZYTYWNEGO !!!!]
+    #     rp.verify_errors(expected_errors)
+
+    # @data(*get_data("incorrect_passwords.csv"))
+    # @unpack
+    # def test_incorrect_password(self, email, name, phone, zipcode, password, repeat_password, paczkomat, error):
+    #     """Test rejestracji nowego użytkownika - błędne hasło"""
+    #     expected_errors = [error]
+    #     if "|" in error:
+    #         expected_errors = error.split("|")
+    #
+    #     hp = HomePage(self.driver)
+    #     hp.close_covid_popup()
+    #     hp.click_sign_in_btn()
+    #     hp.click_manager_paczek_btn()
+    #     hp.switch_driver_to_active_tab()
+    #
+    #     lp = LoginPage(self.driver)
+    #     lp.click_register_btn()
+    #
+    #     rp = RegisterPage(self.driver)
+    #     rp.fill_email(email)
+    #     rp.fill_name(name)
+    #     rp.fill_phone(phone)
+    #     rp.fill_zipcode(zipcode)
+    #     rp.fill_password(password)
+    #     rp.repeat_password(repeat_password)
+    #     rp.fill_paczkomat(paczkomat)
+    #     rp.agree_to_newsletter()
+    #     rp.send_registration_form()     # [ NIE STOSOWAĆ DLA PRZYPADKU POZYTYWNEGO !!!!]
+    #     rp.verify_errors(expected_errors)
+
+    # @data(*get_data("incorrect_zipcodes.csv"))
+    # @unpack
+    # def test_incorrect_zipcode(self, email, name, phone, zipcode, password, repeat_password, paczkomat, error):
+    #     """Test rejestracji nowego użytkownika - błędny kod pocztowy"""
+    #     expected_errors = [error]
+    #     if "|" in error:
+    #         expected_errors = error.split("|")
+    #
+    #     hp = HomePage(self.driver)
+    #     hp.close_covid_popup()
+    #     hp.click_sign_in_btn()
+    #     hp.click_manager_paczek_btn()
+    #     hp.switch_driver_to_active_tab()
+    #
+    #     lp = LoginPage(self.driver)
+    #     lp.click_register_btn()
+    #
+    #     rp = RegisterPage(self.driver)
+    #     rp.fill_email(email)
+    #     rp.fill_name(name)
+    #     rp.fill_phone(phone)
+    #     rp.fill_zipcode(zipcode)
+    #     rp.fill_password(password)
+    #     rp.repeat_password(repeat_password)
+    #     rp.fill_paczkomat(paczkomat)
+    #     rp.agree_to_newsletter()
+    #     rp.send_registration_form()     # [ NIE STOSOWAĆ DLA PRZYPADKU POZYTYWNEGO !!!!]
+    #     rp.verify_errors(expected_errors)
+
+    @data(*get_data("incorrect_phones.csv"))
     @unpack
-    def test_incorrect_email(self, email, name, phone, zipcode, password, repeat_password, paczkomat, error):
-        """Test rejestracji nowego użytkownika - błędny e-mail"""
+    def test_incorrect_phones(self, email, name, phone, zipcode, password, repeat_password, paczkomat, error):
+        """Test rejestracji nowego użytkownika - błędny numer telefonu"""
         expected_errors = [error]
         if "|" in error:
             expected_errors = error.split("|")
