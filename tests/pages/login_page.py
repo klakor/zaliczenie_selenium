@@ -8,7 +8,7 @@ class LoginPage:
         self.driver = driver
 
     def click_register_btn(self):
-        WebDriverWait(self.driver, 30).until(EC.presence_of_element_located(LoginPageLocators.REGISTRATION_BTN)).click()
+        WebDriverWait(self.driver, 40).until(EC.presence_of_element_located(LoginPageLocators.REGISTRATION_BTN)).click()
 
     def click_register_by_facebook(self):
         pass

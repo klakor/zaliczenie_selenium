@@ -25,8 +25,12 @@ class RegistrationTest(BaseTest):
     """
     @data(*get_data("inpost_incorrect_emails.csv"))
     @unpack
-    def test_incorrect_email(self, email, name, phone, zipcode, password, repeat_password, paczkomat):
+    def test_incorrect_email(self, email, name, phone, zipcode, password, repeat_password, paczkomat, error):
         """Test rejestracji nowego użytkownika - błędny e-mail"""
+        expected_errors = [error]
+        if "|" in error:
+            expected_errors = error.split("|")
+
         hp = HomePage(self.driver)
         hp.close_covid_popup()
         hp.click_sign_in_btn()
@@ -45,10 +49,8 @@ class RegistrationTest(BaseTest):
         rp.repeat_password(repeat_password)
         rp.fill_paczkomat(paczkomat)
         rp.agree_to_newsletter()
-        # Kliknij ZAREJESTRUJ [ NIE STOSOWAĆ DLA PRZYPADKU POZYTYWNEGO !!!!]
-        rp.send_registration_form()
-        # Sprawdź poprawność wyświetlanych błędów
-        rp.verify_errors(["Pole wymagane"])
+        rp.send_registration_form()     # [ NIE STOSOWAĆ DLA PRZYPADKU POZYTYWNEGO !!!!]
+        rp.verify_errors(expected_errors)
 
 if __name__=="__main__":
-    unittest.main(verbosity=2)
+    unittest.main(verbosity=1)
