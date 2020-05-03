@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2020-05-03 17:56:15</p>
+                <p class='attribute'><strong>Duration: </strong>1011.68 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 37, Pass: 34, Error: 3</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.RegistrationTest</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_registration_01_______________________________Pole_wymagane_Pole_wymagane_Pole_wymagane_Pole_wymagane_Pole_wymagane_Pole_wymagane_Pole_wymagane__</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_registration_02_______Anna____123456789____40111____MojeHasl0_____MojeHasl0_____KAT01A____Pole_wymagane__</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_registration_03___na____Dorota____700600500____92412____Doda666_____Doda666_____LDZ02M____Wartość_jest_za_krótka__Powinna_mieć_4_znaków_lub_więcej__Nieprawidłowy_adres_email__</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_registration_04___lalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala____Magdalena____700880774____41219____Ha_lo303____Ha_lo303____SOS01A____Ta_wartość_jest_zbyt_długa__Powinna_mieć_255_znaków_lub_mniej__Nieprawidłowy_adres_email__</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_registration_05___zazu____Zenon____234567890____02255____Tajne999_____Tajne999_____PNET0930____Nieprawidłowy_adres_email__</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">WebDriverException: Message: unknown error: cannot determine loading status
+from no such window
+  (Session info: chrome=80.0.3987.87)
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/home/klaudia/.local/lib/python3.6/site-packages/ddt.py", line 151, in wrapper
+    return func(self, *args, **kwargs)
+  File "test_inpost_registration.py", line 41, in test_registration
+    lp.click_register_btn()
+  File "/home/klaudia/Documents/zaliczenie_selenium/tests/pages/login_page.py", line 11, in click_register_btn
+    WebDriverWait(self.driver, 40).until(EC.presence_of_element_located(LoginPageLocators.REGISTRATION_BTN)).click()
+  File "/home/klaudia/.local/lib/python3.6/site-packages/selenium/webdriver/support/wait.py", line 71, in until
+    value = method(self._driver)
+  File "/home/klaudia/.local/lib/python3.6/site-packages/selenium/webdriver/support/expected_conditions.py", line 64, in __call__
+    return _find_element(driver, self.locator)
+  File "/home/klaudia/.local/lib/python3.6/site-packages/selenium/webdriver/support/expected_conditions.py", line 415, in _find_element
+    raise e
+  File "/home/klaudia/.local/lib/python3.6/site-packages/selenium/webdriver/support/expected_conditions.py", line 411, in _find_element
+    return driver.find_element(*by)
+  File "/home/klaudia/.local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/home/klaudia/.local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/klaudia/.local/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: cannot determine loading status
+from no such window
+  (Session info: chrome=80.0.3987.87)
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_registration_06____vp_pl____Antoni____666555444____60167_____eKret12_____eKret12____POZ63N____Nieprawidłowy_adres_email__</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_registration_07___maria2wp_pl____Maria____701602503____54001____Mi_ka101____Mi_ka101____WRO40N____Nieprawidłowy_adres_email__</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_registration_08_____________Janusz____111222333____42226____P_czk0m_t____P_czk0m_t____CZE931____Nieprawidłowy_adres_email__</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_registration_09___rysiek_wp____Ryszard____606606606____80266____P_czk0m_t____P_czk0m_t____GDA960____Nieprawidłowy_adres_email__</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_registration_10___grażyna_wp_pl____Grażyna____606606606____70797____P_czk0m_t____P_czk0m_t____SZC25N____Nieprawidłowy_adres_email__</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_registration_11___a__wp_pl____Mirosław____606606606____31346____P_czk0m_t____P_czk0m_t____KRA149____Nieprawidłowy_adres_email__</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_registration_12___anna_testmail_com________123456789____40111____MojeHasl0_____MojeHasl0_____KAT01A____Pole_wymagane__</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_registration_13___anna_testmail_com____Anna____123456789____40111____haslo____haslo____KAT01A____Wymagane_jest_od_8_do_16_znaków__w_tym_mała_i_duża_litera__cyfra_oraz_znak_specjalny_________________</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">WebDriverException: Message: unknown error: cannot determine loading status
+from no such window
+  (Session info: chrome=80.0.3987.87)
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/home/klaudia/.local/lib/python3.6/site-packages/ddt.py", line 151, in wrapper
+    return func(self, *args, **kwargs)
+  File "test_inpost_registration.py", line 41, in test_registration
+    lp.click_register_btn()
+  File "/home/klaudia/Documents/zaliczenie_selenium/tests/pages/login_page.py", line 11, in click_register_btn
+    WebDriverWait(self.driver, 40).until(EC.presence_of_element_located(LoginPageLocators.REGISTRATION_BTN)).click()
+  File "/home/klaudia/.local/lib/python3.6/site-packages/selenium/webdriver/support/wait.py", line 71, in until
+    value = method(self._driver)
+  File "/home/klaudia/.local/lib/python3.6/site-packages/selenium/webdriver/support/expected_conditions.py", line 64, in __call__
+    return _find_element(driver, self.locator)
+  File "/home/klaudia/.local/lib/python3.6/site-packages/selenium/webdriver/support/expected_conditions.py", line 415, in _find_element
+    raise e
+  File "/home/klaudia/.local/lib/python3.6/site-packages/selenium/webdriver/support/expected_conditions.py", line 411, in _find_element
+    return driver.find_element(*by)
+  File "/home/klaudia/.local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/home/klaudia/.local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/klaudia/.local/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: cannot determine loading status
+from no such window
+  (Session info: chrome=80.0.3987.87)
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_registration_14___dora_testmail_com____Dorota____700600500____92412____mojenajwspanialszehaslo____mojenajwspanialszehaslo____LDZ02M____Wymagane_jest_od_8_do_16_znaków__w_tym_mała_i_duża_litera__cyfra_oraz_znak_specjalny_________________</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_registration_15___madzia_testmail_com____Magdalena____700880774____41219____mojehaslo____mojehaslo____SOS01A____Wymagane_jest_od_8_do_16_znaków__w_tym_mała_i_duża_litera__cyfra_oraz_znak_specjalny_________________</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_registration_16___zazu_testmail_com____Zenon____234567890____02255____mojehaslo1____mojehaslo1____PNET0930____Wymagane_jest_od_8_do_16_znaków__w_tym_mała_i_duża_litera__cyfra_oraz_znak_specjalny_________________</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_registration_17___antek_testmail_com____Antoni____666555444____60167____Mojehaslo1____Mojehaslo1____POZ63N____Wymagane_jest_od_8_do_16_znaków__w_tym_mała_i_duża_litera__cyfra_oraz_znak_specjalny_________________</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_registration_18___maria_testmail_com____Maria____701602503____54001____H_sl0____H_sl0____WRO40N____Wymagane_jest_od_8_do_16_znaków__w_tym_mała_i_duża_litera__cyfra_oraz_znak_specjalny_________________</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_registration_19___janek_testmail_com____Janusz____111222333____42226____H_slo1____H_slo1____CZE931____Wymagane_jest_od_8_do_16_znaków__w_tym_mała_i_duża_litera__cyfra_oraz_znak_specjalny_________________</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_registration_20___rysiek_testmail_com____Ryszard____606606606____80266____Haslo____haslo____GDA960____Wymagane_jest_od_8_do_16_znaków__w_tym_mała_i_duża_litera__cyfra_oraz_znak_specjalny________________Podane_hasła_nie_są_takie_same__</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_registration_21___grazyna_testmail_com____Grażyna____606606606____70797____MojeHasl0_____mojeHasl0_____SZC25N____Podane_hasła_nie_są_takie_same__</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_registration_22___mirus_testmail_com____Mirosław____606606606____31346____MojeHasl0_____MojeHasl0______KRA149____Podane_hasła_nie_są_takie_same__</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_registration_23___anna_testmail_com____Anna________40111____MojeHasl0_____MojeHasl0_____KAT01A____Pole_wymagane__</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_registration_24___dora_testmail_com____Dorota____1____92412____MojeHasl0_____MojeHasl0_____LDZ02M____Nieprawidłowy_numer_telefonu___</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_registration_25___rysiek_testmail_com____Ryszard____12345678____80266____MojeHasl0_____MojeHasl0_____GDA960____Nieprawidłowy_numer_telefonu___</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">WebDriverException: Message: unknown error: cannot determine loading status
+from no such window
+  (Session info: chrome=80.0.3987.87)
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/home/klaudia/.local/lib/python3.6/site-packages/ddt.py", line 151, in wrapper
+    return func(self, *args, **kwargs)
+  File "test_inpost_registration.py", line 41, in test_registration
+    lp.click_register_btn()
+  File "/home/klaudia/Documents/zaliczenie_selenium/tests/pages/login_page.py", line 11, in click_register_btn
+    WebDriverWait(self.driver, 40).until(EC.presence_of_element_located(LoginPageLocators.REGISTRATION_BTN)).click()
+  File "/home/klaudia/.local/lib/python3.6/site-packages/selenium/webdriver/support/wait.py", line 71, in until
+    value = method(self._driver)
+  File "/home/klaudia/.local/lib/python3.6/site-packages/selenium/webdriver/support/expected_conditions.py", line 64, in __call__
+    return _find_element(driver, self.locator)
+  File "/home/klaudia/.local/lib/python3.6/site-packages/selenium/webdriver/support/expected_conditions.py", line 415, in _find_element
+    raise e
+  File "/home/klaudia/.local/lib/python3.6/site-packages/selenium/webdriver/support/expected_conditions.py", line 411, in _find_element
+    return driver.find_element(*by)
+  File "/home/klaudia/.local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/home/klaudia/.local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/klaudia/.local/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: cannot determine loading status
+from no such window
+  (Session info: chrome=80.0.3987.87)
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_registration_26___grazyna_testmail_com____Grażyna____nrtelefon____70797____MojeHasl0_____MojeHasl0_____SZC25N____Pole_wymagane__</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_registration_27___mirus_testmail_com____Mirosław_________________31346____MojeHasl0_____MojeHasl0_____KRA149____Pole_wymagane__</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_registration_28___mirus_testmail_com____Mirosław____606606606_____________MojeHasl0_____MojeHasl0_____KRA149____Pole_wymagane__</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_registration_29___anna_testmail_com____Anna____123456789________MojeHasl0_____MojeHasl0_____KAT01A____Pole_wymagane__</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_registration_30___dora_testmail_com____Dorota____700600500____00____MojeHasl0_____MojeHasl0_____LDZ02M____Nieprawidłowy_kod_pocztowy___</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_registration_31___madzia_testmail_com____Magdalena____700880774____111____MojeHasl0_____MojeHasl0_____SOS01A____Nieprawidłowy_kod_pocztowy___</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_registration_32___zazu_testmail_com____Zenon____234567890____2222____MojeHasl0_____MojeHasl0_____PNET0930____Nieprawidłowy_kod_pocztowy___</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_registration_33___antek_testmail_com____Antoni____666555444____22222____MojeHasl0_____MojeHasl0_____POZ63N____Nieprawidłowy_kod_pocztowy___</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_registration_34___maria_testmail_com____Maria____701602503____00101____MojeHasl0_____MojeHasl0_____WRO40N____Nieprawidłowy_kod_pocztowy___</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_registration_35___janek_testmail_com____Janusz____111222333____00000____MojeHasl0_____MojeHasl0_____CZE931____Nieprawidłowy_kod_pocztowy___</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_registration_36___rysiek_testmail_com____Ryszard____606606606____99999____MojeHasl0_____MojeHasl0_____GDA960____Nieprawidłowy_kod_pocztowy___</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_registration_37___grazyna_testmail_com____Grażyna____606606606____66666____MojeHasl0_____MojeHasl0_____SZC25N____Nieprawidłowy_kod_pocztowy___</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 37, Pass: 34, Error: 3 -- Duration: 1011.68 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
