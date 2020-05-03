@@ -1,3 +1,5 @@
+import sys, os
+sys.path.append("..")
 from base_test import BaseTest
 from pages.home_page import HomePage
 from pages.login_page import LoginPage
@@ -23,10 +25,10 @@ class RegistrationTest(BaseTest):
     """
     Testy strony Rejestracja
     """
-    @data(*get_data("incorrect_phones.csv"))
+    @data(*get_data("empty_form.csv"))
     @unpack
     def test_registration(self, email, name, phone, zipcode, password, repeat_password, paczkomat, error):
-        """Test rejestracji nowego użytkownika - błędny e-mail"""
+        """Test rejestracji nowego użytkownika"""
         expected_errors = [error]
         if "|" in error:
             expected_errors = error.split("|")
@@ -55,4 +57,4 @@ class RegistrationTest(BaseTest):
 
 
 if __name__=="__main__":
-    unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='./reports'))
+    unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='../reports'))
