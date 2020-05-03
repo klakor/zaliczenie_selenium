@@ -1,0 +1,2 @@
+Email,Name,Phone,"Postal code",Password,"Repeat Password",Paczkomat,Error
+anna@testmail.com,,123456789,40111,MojeHasl0!,MojeHasl0!,KAT01A,"Pole wymagane"
