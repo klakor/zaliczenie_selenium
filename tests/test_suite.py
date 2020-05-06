@@ -1,9 +1,7 @@
-from test_registration_incorrect_emails import RegistrationTestEmail
-from test_registration_incorrect_names import RegistrationTestName
-from test_registration_incorrect_passwords import RegistrationTestPassword
-from test_registration_incorrect_phones import RegistrationTestPhone
-from test_registration_incorrect_zipcodes import RegistrationTestZipcode
-from test_registration_sending_empty_form import RegistrationTestEmptyForm
+from test_page_loaded_successfully import LoginPageTest
+from test_inpost_registration import RegistrationTest
+from test_inpost_logging import LoggingTest
+
 import unittest
 
 class TestSuite(unittest.TestSuite):
@@ -12,12 +10,11 @@ class TestSuite(unittest.TestSuite):
     """
     def suite():
         suite = unittest.TestSuite()
-        suite.addTest(RegistrationTestEmptyForm('test_empty_form'))
-        suite.addTest(RegistrationTestEmail('test_incorrect_email'))
-        suite.addTest(RegistrationTestName('test_registration_incorrect_names'))
-        suite.addTest(RegistrationTestPassword('test_incorrect_password'))
-        suite.addTest(RegistrationTestPhone('test_incorrect_phones'))
-        suite.addTest(RegistrationTestZipcode('test_incorrect_zipcode'))
+        # Nazwa klasy("nazwa testu")
+        suite.addTest(LoginPageTest('test_page_loaded_successfully'))
+        suite.addTest(RegistrationTest('test_registration'))
+        suite.addTest(LoggingTest('test_logging_positive'))
+
         return suite
 
 if __name__ == "__main__":

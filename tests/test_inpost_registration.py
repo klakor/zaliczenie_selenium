@@ -1,4 +1,4 @@
-import sys, os
+import sys
 sys.path.append("..")
 from base_test import BaseTest
 from pages.home_page import HomePage
@@ -25,7 +25,7 @@ class RegistrationTest(BaseTest):
     """
     Testy strony Rejestracja
     """
-    @data(*get_data("empty_form.csv"))
+    @data(*get_data("data.csv"))
     @unpack
     def test_registration(self, email, name, phone, zipcode, password, repeat_password, paczkomat, error):
         """Test rejestracji nowego użytkownika"""
@@ -33,11 +33,11 @@ class RegistrationTest(BaseTest):
         if "|" in error:
             expected_errors = error.split("|")
 
-        hp = HomePage(self.driver)
-        hp.close_covid_popup()
-        hp.click_sign_in_btn()
-        hp.click_manager_paczek_btn()
-        hp.switch_driver_to_active_tab()
+        # hp = HomePage(self.driver)
+        # hp.close_covid_popup()
+        # hp.click_sign_in_btn()
+        # hp.click_manager_paczek_btn()
+        # hp.switch_driver_to_active_tab()
 
         lp = LoginPage(self.driver)
         lp.click_register_btn()
