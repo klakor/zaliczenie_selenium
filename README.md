@@ -16,7 +16,7 @@ A test_suite.py is provided in '/tests' folder. You can run it directly or use t
 
 **So far, the following tests are available:**
 
-verification if home, login and register pages loaded succesfully
+* verification if home, login and register pages have loaded succesfully
 * navigation between:
     - home page >> login page
     - home page >> register pages

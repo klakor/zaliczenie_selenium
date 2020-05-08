@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2cfa3d75-f852-4305-ac36-db208549941c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inpost_rejestracja.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/locators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/home_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/register_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/register_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/base_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/base_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_inpost_logging.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_inpost_logging.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_inpost_navigation.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_inpost_navigation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_inpost_registration.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_inpost_registration.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_page_loaded_successfully.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_page_loaded_successfully.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_suite.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_suite.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
