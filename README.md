@@ -11,7 +11,7 @@ You'll find all required dependencies in test_requirements.txt file.
 You can install them by running a single command:
 $ make deps
 
-You can run tests separatly or the whole package using a test_suite.py in '/tests' folder.
+You can run tests separately or run the whole package using a test_suite.py in '/tests' folder.
 You can also use the command:
 $ make test
 
