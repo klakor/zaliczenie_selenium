@@ -28,3 +28,17 @@ class BaseTestLogin(unittest.TestCase):
 
     def tearDown(self):
         self.driver.quit()
+
+class BaseTestRegister(unittest.TestCase):
+    """
+    Klasa bazowa każdego testu rozpoczynającego się ze strony logowania
+    """
+
+    def setUp(self):
+        self.driver = webdriver.Chrome()
+        self.driver.get("https://manager.paczkomaty.pl/auth/register")
+        self.driver.maximize_window()
+        self.driver.implicitly_wait(30)
+
+    def tearDown(self):
+        self.driver.quit()

@@ -1,8 +1,5 @@
-import sys
-sys.path.append("..")
-from base_test import BaseTestLogin
-from pages.home_page import HomePage
-from pages.login_page import LoginPage
+import os
+
 from pages.register_page import RegisterPage
 import unittest
 import HtmlTestRunner
@@ -10,9 +7,12 @@ import csv
 from ddt import ddt, data, unpack
 
 # pobieranie danych z pliku
+from tests.base_test import BaseTestRegister
+
+
 def get_data(file_name):
     rows = []
-    data_file = open(file_name, 'rt')
+    data_file = open(os.path.join(os.path.dirname(__file__), file_name), 'rt')
     reader = csv.reader(data_file)
     # Pomijam pierwszy wiersz
     next(reader, None)
@@ -21,7 +21,7 @@ def get_data(file_name):
     return rows
 
 @ddt
-class RegistrationTest(BaseTestLogin):
+class RegistrationTest(BaseTestRegister):
     """
     Testy strony Rejestracja
     """
@@ -32,9 +32,6 @@ class RegistrationTest(BaseTestLogin):
         expected_errors = [error]
         if "|" in error:
             expected_errors = error.split("|")
-
-        lp = LoginPage(self.driver)
-        lp.click_register_btn()
 
         rp = RegisterPage(self.driver)
         rp.fill_email(email)

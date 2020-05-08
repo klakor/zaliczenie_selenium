@@ -1,7 +1,4 @@
-import sys
-sys.path.append("..")
-from base_test import BaseTestHome, BaseTestLogin
-from pages.home_page import HomePage
+from tests.base_test import BaseTestHome, BaseTestLogin
 from pages.login_page import LoginPage
 import unittest
 import HtmlTestRunner

@@ -1,19 +1,18 @@
+import os
 import sys
+
+from tests.base_test import BaseTestLogin
+
 sys.path.append("..")
-from base_test import BaseTestLogin
-from pages.home_page import HomePage
 from pages.login_page import LoginPage
-from pages.register_page import RegisterPage
 import unittest
-import HtmlTestRunner
-from time import sleep
 import csv
 from ddt import ddt, data, unpack
 
 # pobieranie danych z pliku
 def get_data(file_name):
     rows = []
-    data_file = open(file_name, 'rt')
+    data_file = open(os.path.join(os.path.dirname(__file__), file_name), 'rt')
     reader = csv.reader(data_file)
     # Pomijam pierwszy wiersz
     next(reader, None)

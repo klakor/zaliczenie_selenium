@@ -1,11 +1,11 @@
-import sys
-sys.path.append("..")
-from base_test import BaseTestHome
 from pages.login_page import LoginPage
 from pages.home_page import HomePage
 from pages.register_page import RegisterPage
 import unittest
 import HtmlTestRunner
+
+from tests.base_test import BaseTestHome
+
 
 class NavigationTest(BaseTestHome):
     def test_navigate_to_login_page(self):

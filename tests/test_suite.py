@@ -2,6 +2,7 @@ from test_page_loaded_successfully import LoginPageTest, HomePageTest
 from test_inpost_navigation import NavigationTest
 from test_inpost_registration import RegistrationTest
 from test_inpost_logging import LoggingNegative, LoggingPositive
+import HtmlTestRunner
 
 import unittest
 
@@ -24,4 +25,4 @@ class TestSuite(unittest.TestSuite):
         return suite
 
 if __name__ == "__main__":
-  unittest.main()
+  unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='../reports'))

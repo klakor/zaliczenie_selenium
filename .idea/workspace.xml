@@ -3,29 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="2cfa3d75-f852-4305-ac36-db208549941c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/zaliczenie_selenium.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/zaliczenie_selenium.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/locators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/home_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/register_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/register_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/base_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/base_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/empty_form.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/incorrect_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/tests/incorrect_data.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/incorrect_emails.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/incorrect_names.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/incorrect_passwords.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/incorrect_phones.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/incorrect_zipcodes.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/logging.csv" beforeDir="false" afterPath="$PROJECT_DIR$/tests/logging.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_inpost_logging.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_inpost_logging.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_inpost_navigation.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_inpost_navigation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_inpost_registration.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_inpost_registration.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_page_loaded_successfully.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_page_loaded_successfully.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_registration_incorrect_emails.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_registration_incorrect_names.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_registration_incorrect_passwords.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_registration_incorrect_phones.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_registration_incorrect_zipcodes.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_registration_sending_empty_form.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_suite.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_suite.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +35,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="Python.test_inpost_navigation">
+  <component name="RunManager" selected="Python.test_suite">
     <configuration name="test_inpost_logging" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="zaliczenie_selenium" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -161,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test_inpost_navigation" />
         <item itemvalue="Python.test_suite" />
-        <item itemvalue="Python.test_page_loaded_successfully" />
-        <item itemvalue="Python.test_inpost_registration" />
         <item itemvalue="Python.test_inpost_logging" />
+        <item itemvalue="Python.test_inpost_registration" />
+        <item itemvalue="Python.test_page_loaded_successfully" />
+        <item itemvalue="Python.test_inpost_navigation" />
       </list>
     </recent_temporary>
   </component>
@@ -203,22 +185,22 @@
       <screen x="67" y="27" width="1853" height="940" />
     </state>
     <state width="1328" height="506" key="DebuggerActiveHint/67.27.1853.940@67.27.1853.940" timestamp="1588185702024" />
-    <state width="1830" height="375" key="GridCell.Tab.0.bottom" timestamp="1588945235881">
+    <state width="1830" height="375" key="GridCell.Tab.0.bottom" timestamp="1588955079797">
       <screen x="67" y="27" width="1853" height="940" />
     </state>
-    <state width="1830" height="375" key="GridCell.Tab.0.bottom/67.27.1853.940@67.27.1853.940" timestamp="1588945235881" />
-    <state width="1830" height="375" key="GridCell.Tab.0.center" timestamp="1588945235881">
+    <state width="1830" height="375" key="GridCell.Tab.0.bottom/67.27.1853.940@67.27.1853.940" timestamp="1588955079797" />
+    <state width="1830" height="375" key="GridCell.Tab.0.center" timestamp="1588955079794">
       <screen x="67" y="27" width="1853" height="940" />
     </state>
-    <state width="1830" height="375" key="GridCell.Tab.0.center/67.27.1853.940@67.27.1853.940" timestamp="1588945235881" />
-    <state width="1830" height="375" key="GridCell.Tab.0.left" timestamp="1588945235881">
+    <state width="1830" height="375" key="GridCell.Tab.0.center/67.27.1853.940@67.27.1853.940" timestamp="1588955079794" />
+    <state width="1830" height="375" key="GridCell.Tab.0.left" timestamp="1588955079793">
       <screen x="67" y="27" width="1853" height="940" />
     </state>
-    <state width="1830" height="375" key="GridCell.Tab.0.left/67.27.1853.940@67.27.1853.940" timestamp="1588945235881" />
-    <state width="1830" height="375" key="GridCell.Tab.0.right" timestamp="1588945235881">
+    <state width="1830" height="375" key="GridCell.Tab.0.left/67.27.1853.940@67.27.1853.940" timestamp="1588955079793" />
+    <state width="1830" height="375" key="GridCell.Tab.0.right" timestamp="1588955079796">
       <screen x="67" y="27" width="1853" height="940" />
     </state>
-    <state width="1830" height="375" key="GridCell.Tab.0.right/67.27.1853.940@67.27.1853.940" timestamp="1588945235881" />
+    <state width="1830" height="375" key="GridCell.Tab.0.right/67.27.1853.940@67.27.1853.940" timestamp="1588955079796" />
     <state width="1830" height="298" key="GridCell.Tab.1.bottom" timestamp="1588931030412">
       <screen x="67" y="27" width="1853" height="940" />
     </state>
@@ -235,6 +217,14 @@
       <screen x="67" y="27" width="1853" height="940" />
     </state>
     <state width="1830" height="298" key="GridCell.Tab.1.right/67.27.1853.940@67.27.1853.940" timestamp="1588931030411" />
+    <state x="656" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1588953981476">
+      <screen x="67" y="27" width="1853" height="940" />
+    </state>
+    <state x="656" y="229" width="672" height="678" key="search.everywhere.popup/67.27.1853.940@67.27.1853.940" timestamp="1588953981476" />
+    <state x="826" y="290" width="324" height="412" key="svn.repositoryBrowser" timestamp="1588953669699">
+      <screen x="67" y="27" width="1853" height="940" />
+    </state>
+    <state x="826" y="290" width="324" height="412" key="svn.repositoryBrowser/67.27.1853.940@67.27.1853.940" timestamp="1588953669699" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
