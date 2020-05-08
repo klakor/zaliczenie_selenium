@@ -8,7 +8,7 @@ Make sure that you have the chromedriver installed in **/usr/local/bin/** direct
 https://chromedriver.chromium.org/downloads
 
 
-All required dependencies are provided in **test_requirements.txt** file. You can install them by running a single command: 
+All required dependencies are provided in **requirements.txt** file. You can install them by running a single command: 
 > **$ make deps**
 
 A test_suite.py is provided in '/tests' folder. You can run it directly or use the command: 

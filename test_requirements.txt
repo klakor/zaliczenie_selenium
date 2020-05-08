@@ -1,4 +1,0 @@
-selenium
-ddt
-html-testRunner
-flake8
