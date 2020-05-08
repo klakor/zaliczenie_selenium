@@ -7,12 +7,11 @@ Test reports are generated using HtmlTestRunner module and saved automatically i
 Make sure that you have the chromedriver installed. If not, you can download it here:
 https://chromedriver.chromium.org/downloads
 
-You'll find all required dependencies in test_requirements.txt file.
+All required dependencies are provided in test_requirements.txt file.
 You can install them by running a single command:
 $ make deps
 
-You can run tests separately or run the whole package using a test_suite.py in '/tests' folder.
-You can also use the command:
+A test_suite.py is provided in '/tests' folder. You can run it directly or use the command:
 $ make test
 
 So far, the following tests are available:
