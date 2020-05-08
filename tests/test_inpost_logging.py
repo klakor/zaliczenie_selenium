@@ -1,13 +1,10 @@
 import os
-import sys
-
 from tests.base_test import BaseTestLogin
-
-sys.path.append("..")
 from pages.login_page import LoginPage
 import unittest
 import csv
 from ddt import ddt, data, unpack
+
 
 # pobieranie danych z pliku
 def get_data(file_name):
@@ -19,6 +16,7 @@ def get_data(file_name):
     for row in reader:
         rows.append(row)
     return rows
+
 
 @ddt
 class LoggingNegative(BaseTestLogin):
@@ -57,5 +55,5 @@ class LoggingPositive(BaseTestLogin):
         lp.verify_is_logging_succesfull(email)
 
 
-if __name__=="__main__":
+if __name__ == "__main__":
     unittest.main(verbosity=1)

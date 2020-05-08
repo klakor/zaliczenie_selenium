@@ -6,6 +6,7 @@ from selenium.webdriver.support import expected_conditions as EC
 class LoginPage:
     def __init__(self, driver):
         self.driver = driver
+
     def refresh(self):
         self.driver.refresh()
 
@@ -43,7 +44,6 @@ class LoginPage:
         print('error ze strony ', visible_errors)
         print('error z testu', error)
         assert visible_errors == error
-
 
     def click_log_in_by_allegro(self):
         pass

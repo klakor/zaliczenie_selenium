@@ -20,11 +20,13 @@ def get_data(file_name):
         rows.append(row)
     return rows
 
+
 @ddt
 class RegistrationTest(BaseTestRegister):
     """
     Testy strony Rejestracja
     """
+
     @data(*get_data("incorrect_data.csv"))
     @unpack
     def test_registration(self, email, name, phone, zipcode, password, repeat_password, paczkomat, error):
@@ -42,9 +44,9 @@ class RegistrationTest(BaseTestRegister):
         rp.repeat_password(repeat_password)
         rp.fill_paczkomat(paczkomat)
         rp.agree_to_newsletter()
-        rp.send_registration_form()     # [ NIE STOSOWAĆ DLA PRZYPADKU POZYTYWNEGO !!!!]
+        rp.send_registration_form()  # [ NIE STOSOWAĆ DLA PRZYPADKU POZYTYWNEGO !!!!]
         rp.verify_errors(expected_errors)
 
 
-if __name__=="__main__":
+if __name__ == "__main__":
     unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='../reports'))

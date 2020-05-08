@@ -1,11 +1,13 @@
 from selenium.webdriver.common.by import By
 
+
 class HomePageLocators():
     """ Selektory strony głównej"""
     COVID_POPUP = (By.XPATH, "//div[@id='popup-window']")
     COVID_POPUP_CLOSE_BTN = (By.XPATH, "//a[@id='popup-close']")
     LOG_IN_BTN = (By.XPATH, "//button[@class='btn--primary -login']")
     MANAGER_BTN = (By.PARTIAL_LINK_TEXT, "Manager Paczek")
+
 
 class LoginPageLocators():
     """ Selektory strony logowania"""
@@ -19,6 +21,7 @@ class LoginPageLocators():
     COVID_POPUP_CLOSE_BTN = (By.XPATH, "//div[@title='Koronawirus']/i")
     LOGGED_USER = (By.XPATH, "//span[@class='user-email p-1']")
     LOGGING_ERROR = (By.XPATH, "//ul[@class='errors']/li")
+
 
 class RegisterPageLocators():
     """ Selektory strony Rejestracja"""

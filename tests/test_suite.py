@@ -6,10 +6,12 @@ import HtmlTestRunner
 
 import unittest
 
+
 class TestSuite(unittest.TestSuite):
     """
     Wszystkie testy strony Rejestracja
     """
+
     def suite():
         suite = unittest.TestSuite()
         # Nazwa klasy("nazwa testu")
@@ -20,9 +22,9 @@ class TestSuite(unittest.TestSuite):
         suite.addTest(LoggingNegative('test_logging_negative'))
         suite.addTest(LoggingPositive('test_logging_positive'))
         suite.addTest(RegistrationTest('test_registration'))
-        suite.addTest(LoggingTest('test_logging_positive'))
 
         return suite
 
+
 if __name__ == "__main__":
-  unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='../reports'))
+    unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='../reports'))

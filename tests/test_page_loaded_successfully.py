@@ -3,10 +3,12 @@ from pages.login_page import LoginPage
 import unittest
 import HtmlTestRunner
 
+
 class HomePageTest(BaseTestHome):
     """
     Testy strony startowej inpost.pl
     """
+
     def test_home_page_loaded_successfully(self):
         """Test prawidłowego załadowania się strony domowej inpost.pl"""
 
@@ -21,5 +23,6 @@ class LoginPageTest(BaseTestLogin):
         lp = LoginPage(self.driver)
         lp.verify_login_page_loaded_successfully(header_text)
 
-if __name__=="__main__":
+
+if __name__ == "__main__":
     unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='../reports'))

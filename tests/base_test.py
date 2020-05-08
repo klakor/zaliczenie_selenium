@@ -1,6 +1,7 @@
 import unittest
 from selenium import webdriver
 
+
 class BaseTestHome(unittest.TestCase):
     """
     Klasa bazowa każdego testu rozpoczynającego się ze strony domowej
@@ -15,6 +16,7 @@ class BaseTestHome(unittest.TestCase):
     def tearDown(self):
         self.driver.quit()
 
+
 class BaseTestLogin(unittest.TestCase):
     """
     Klasa bazowa każdego testu rozpoczynającego się ze strony logowania
@@ -28,6 +30,7 @@ class BaseTestLogin(unittest.TestCase):
 
     def tearDown(self):
         self.driver.quit()
+
 
 class BaseTestRegister(unittest.TestCase):
     """
