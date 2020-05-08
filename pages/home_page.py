@@ -1,5 +1,3 @@
-# import sys, os
-# sys.path.append("..")
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver import ActionChains
@@ -15,13 +13,20 @@ class HomePage:
     def __init__(self, driver):
         self.driver = driver
 
+    def refresh(self):
+        self.driver.refresh()
+
     def close_covid_popup(self):
-        sleep(10)
-        if self.driver.find_element(*HomePageLocators.COVID_POPUP):
-            WebDriverWait(self.driver, 40).until(EC.presence_of_element_located(HomePageLocators.COVID_POPUP_CLOSE_BTN)).click()
+        try:
+            covid_popup = WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located(HomePageLocators.COVID_POPUP_CLOSE_BTN))
+            if covid_popup.is_visible() and covid_popup.is_enabled():
+                covid_popup.click()
+        except:
+            print("popup is not visible")
 
     def click_sign_in_btn(self):
-        WebDriverWait(self.driver, 40).until(EC.presence_of_element_located(HomePageLocators.LOGIN_BTN)).click()
+        WebDriverWait(self.driver, 40).until(EC.presence_of_element_located(HomePageLocators.LOG_IN_BTN)).click()
 
     def click_manager_paczek_btn(self):
         actions = ActionChains(self.driver)

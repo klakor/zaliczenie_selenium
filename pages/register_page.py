@@ -1,5 +1,3 @@
-# import sys, os
-# sys.path.append("..")
 from locators import RegisterPageLocators
 from time import sleep
 from selenium.webdriver.common.keys import Keys
@@ -11,6 +9,9 @@ class RegisterPage:
 
     def __init__(self, driver):
         self.driver = driver
+
+    def refresh(self):
+        self.driver.refresh()
 
     def fill_email(self, email):
         WebDriverWait(self.driver, 40).until(EC.presence_of_element_located(RegisterPageLocators.EMAIL_INPUT)).send_keys(email)
@@ -32,7 +33,8 @@ class RegisterPage:
 
     def fill_paczkomat(self, paczkomat):
         WebDriverWait(self.driver, 40).until(EC.presence_of_element_located(RegisterPageLocators.PACZKOMAT_INPUT)).send_keys(paczkomat)
-        WebDriverWait(self.driver, 20).until(EC.presence_of_element_located(RegisterPageLocators.PACZKOMAT_INPUT)).send_keys(Keys.ENTER)
+        WebDriverWait(self.driver, 40).until(EC.presence_of_element_located(RegisterPageLocators.PACZKOMAT_LIST))
+        WebDriverWait(self.driver, 40).until(EC.presence_of_element_located(RegisterPageLocators.PACZKOMAT_INPUT)).send_keys(Keys.ENTER)
 
     def agree_to_newsletter(self):
         WebDriverWait(self.driver, 40).until(EC.presence_of_element_located(RegisterPageLocators.CHECKBOX_BTN)).click()
@@ -40,13 +42,21 @@ class RegisterPage:
     def send_registration_form(self):
         WebDriverWait(self.driver, 40).until(EC.presence_of_element_located(RegisterPageLocators.REGISTER_BTN)).click()
 
+    def verify_register_page_loaded_successfully(self, header_text):
+        header = self.driver.find_element(*RegisterPageLocators.REGISTRATION_PAGE_HEADER)
+        if header.is_displayed():
+            header = header.text.strip()
+        assert header == header_text
+
     def verify_errors(self, error):
+        WebDriverWait(self.driver, 40).until(EC.presence_of_element_located(RegisterPageLocators.REGISTRATION_ERRORS))
         error_notices = self.driver.find_elements(*RegisterPageLocators.REGISTRATION_ERRORS)
         visible_errors = []
         for e in error_notices:
             if e.is_displayed():
                 visible_errors.append(e.text)
         assert visible_errors == error
-
-    def reset_form(self):
-        self.driver.refresh()
+        # print("Error ze strony:")
+        # print(visible_errors)
+        # print("Error z testu")
+        # print(error)

@@ -1,6 +1,6 @@
 import sys
 sys.path.append("..")
-from base_test import BaseTest
+from base_test import BaseTestLogin
 from pages.home_page import HomePage
 from pages.login_page import LoginPage
 from pages.register_page import RegisterPage
@@ -21,23 +21,17 @@ def get_data(file_name):
     return rows
 
 @ddt
-class RegistrationTest(BaseTest):
+class RegistrationTest(BaseTestLogin):
     """
     Testy strony Rejestracja
     """
-    @data(*get_data("data.csv"))
+    @data(*get_data("incorrect_data.csv"))
     @unpack
     def test_registration(self, email, name, phone, zipcode, password, repeat_password, paczkomat, error):
         """Test rejestracji nowego użytkownika"""
         expected_errors = [error]
         if "|" in error:
             expected_errors = error.split("|")
-
-        # hp = HomePage(self.driver)
-        # hp.close_covid_popup()
-        # hp.click_sign_in_btn()
-        # hp.click_manager_paczek_btn()
-        # hp.switch_driver_to_active_tab()
 
         lp = LoginPage(self.driver)
         lp.click_register_btn()
@@ -53,7 +47,6 @@ class RegistrationTest(BaseTest):
         rp.agree_to_newsletter()
         rp.send_registration_form()     # [ NIE STOSOWAĆ DLA PRZYPADKU POZYTYWNEGO !!!!]
         rp.verify_errors(expected_errors)
-        rp.reset_form()
 
 
 if __name__=="__main__":

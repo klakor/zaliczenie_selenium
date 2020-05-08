@@ -1,5 +1,4 @@
 Email,Name,Phone,"Postal code",Password,"Repeat Password",Paczkomat,Error
-,,,,,,,"Pole wymagane|Pole wymagane|Pole wymagane|Pole wymagane|Pole wymagane|Pole wymagane|Pole wymagane"
 ,Anna,123456789,40111,MojeHasl0!,MojeHasl0!,KAT01A,"Pole wymagane"
 na,Dorota,700600500,92412,Doda666$,Doda666$,LDZ02M,"Wartość jest za krótka. Powinna mieć 4 znaków lub więcej.|Nieprawidłowy adres email"
 lalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala,Magdalena,700880774,41219,Ha$lo303,Ha$lo303,SOS01A,"Ta wartość jest zbyt długa. Powinna mieć 255 znaków lub mniej.|Nieprawidłowy adres email"

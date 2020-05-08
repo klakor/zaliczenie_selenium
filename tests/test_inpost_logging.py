@@ -1,6 +1,6 @@
 import sys
 sys.path.append("..")
-from base_test import BaseTest
+from base_test import BaseTestLogin
 from pages.home_page import HomePage
 from pages.login_page import LoginPage
 from pages.register_page import RegisterPage
@@ -22,13 +22,13 @@ def get_data(file_name):
     return rows
 
 @ddt
-class LoggingTestNegative(BaseTest):
+class LoggingNegative(BaseTestLogin):
     """
     Testy strony Logowanie
     """
     @data(*get_data("logging.csv"))
     @unpack
-    def test_logging_negative_empty_password(self, email, password, error):
+    def test_logging_negative(self, email, password, error):
         """Test logowania użytkownika zakończony porażką"""
         expected_errors = [error]
         if "|" in error:
@@ -38,25 +38,25 @@ class LoggingTestNegative(BaseTest):
         lp.fill_email(email)
         lp.fill_password(password)
         lp.send_logging_form()
-        lp.verify_is_logging_failed(error)
+        lp.verify_is_logging_failed(expected_errors)
 
 
-# class LoggingTestPositive(BaseTest):
-#     """
-#     Testy strony Logowanie
-#     """
-#     def test_logging_positive(self):
-#         """Test logowania użytkownika zakończony pomyślnie"""
-#         email = ("cetojiy960@tmajre.com")
-#         password = ("H@slo101")
-#
-#         lp = LoginPage(self.driver)
-#         lp.fill_email(email)
-#         lp.fill_password(password)
-#         lp.send_logging_form()
-#         lp.close_covid_popup()
-#         lp.verify_is_logging_succesfull(email)
+class LoggingPositive(BaseTestLogin):
+    """
+    Testy strony Logowanie
+    """
+    def test_logging_positive(self):
+        """Test logowania użytkownika zakończony pomyślnie"""
+        email = ("cetojiy960@tmajre.com")
+        password = ("H@slo101")
+
+        lp = LoginPage(self.driver)
+        lp.fill_email(email)
+        lp.fill_password(password)
+        lp.send_logging_form()
+        lp.close_covid_popup()
+        lp.verify_is_logging_succesfull(email)
 
 
 if __name__=="__main__":
-    unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='../reports'))
+    unittest.main(verbosity=1)
