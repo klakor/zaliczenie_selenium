@@ -14,7 +14,7 @@ class TestSuite(unittest.TestSuite):
 
     def suite():
         suite = unittest.TestSuite()
-        # Nazwa klasy("nazwa testu")
+        # Nazwa klasy('nazwa testu')
         suite.addTest(HomePageTest('test_home_page_loaded_successfully'))
         suite.addTest(LoginPageTest('test_login_page_loaded_succesfully'))
         suite.addTest(NavigationTest('test_navigate_to_login_page'))

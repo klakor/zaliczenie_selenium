@@ -7,6 +7,8 @@ class HomePageLocators():
     COVID_POPUP_CLOSE_BTN = (By.XPATH, "//a[@id='popup-close']")
     LOG_IN_BTN = (By.XPATH, "//button[@class='btn--primary -login']")
     MANAGER_BTN = (By.PARTIAL_LINK_TEXT, "Manager Paczek")
+    SEND_BTN = (By.XPATH, "//ul[@class='main--menu mainMenu']//a[@title='Wysyłaj z InPost']")
+    QUICK_SEND_BTN = (By.XPATH, "//ul[@class='submenu--list--desktop submenuListDesktop']//a[@title='Nadaj przesyłkę']")
 
 
 class LoginPageLocators():
@@ -37,3 +39,22 @@ class RegisterPageLocators():
     CHECKBOX_BTN = (By.XPATH, "//input[@id='t3-newsletter']")
     REGISTER_BTN = (By.XPATH, "//button[@id='submit_submit']")
     REGISTRATION_ERRORS = (By.XPATH, "//ul[@class='errors']//li")
+
+
+class QuickSendPageLocators():
+    """Selektory strony Szybkie Nadanie"""
+    BOXMACHINE_RADIO = (By.XPATH, "//label[@for='deliveryTypeboxmachine']//i[@class='fa fa-circle']")
+    ADDRESS_RADIO = (By.XPATH, "//label[@for='deliveryTypeaddress']//i[@class='fa fa-circle']")
+    PARCELSIZE_A_RADIO = (By.XPATH, "//label[@for='parcelSizeA']//i[@class='fa fa-circle']")
+    PARCELSIZE_B_RADIO = (By.XPATH, "//label[@for='parcelSizeB']//i[@class='fa fa-circle']")
+    PARCELSIZE_C_RADIO = (By.XPATH, "//label[@for='parcelSizeC']//i[@class='fa fa-circle']")
+    SEND_NAME_INPUT = (By.XPATH, "//input[@placeholder='Wpisz imię i nazwisko lub nazwę firmy*']")
+    SEND_EMAIL_INPUT = (By.XPATH, "//input[@placeholder='Wpisz adres e-mail odbiorcy*']")
+    SEND_PHONE_INPUT = (By.XPATH, "//input[@placeholder='Wpisz numer telefonu odbiorcy*']")
+    SEND_BOXMACHINE_INPUT = (By.XPATH, "//div[@class='ng-input']//input[@autocomplete='a1305a027b93']")
+    REC_NAME_INPUT = (By.XPATH, "//input[@placeholder='Wpisz imię i nazwisko odbiorcy*']")
+    REC_EMAIL_INPUT = (By.XPATH, "//input[@placeholder='Wpisz adres e-mail odbiorcy*']")
+    REC_PHONE_INPUT = (By.XPATH, "//input[@placeholder='Wpisz numer telefonu odbiorcy*']")
+    REC_BOXMACHINE_INPUT = (By.XPATH, "//div[@class='ng-input']//input[@autocomplete='ad8eb4d95af9']")
+    SUMMARY_BTN = (By.XPATH, "//button[@class='btn btn-submit position-relative with-loader']")
+    POLICY_CHECKBOX = (By.XPATH, "//label[@for='terms']//i[@class='fa fa-check']")

@@ -1,5 +1,5 @@
 import os
-
+from tests.base_test import BaseTestRegister
 from pages.register_page import RegisterPage
 import unittest
 import HtmlTestRunner
@@ -7,9 +7,6 @@ import csv
 from ddt import ddt, data, unpack
 
 # pobieranie danych z pliku
-from tests.base_test import BaseTestRegister
-
-
 def get_data(file_name):
     rows = []
     data_file = open(os.path.join(os.path.dirname(__file__), file_name), 'rt')
