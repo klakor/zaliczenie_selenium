@@ -39,6 +39,13 @@ class NavigationTest(BaseTestHome):
         rp = RegisterPage(self.driver)
         rp.verify_register_page_loaded_successfully(header_text)
 
+    def test_navigate_to_quicksend_page(self):
+        hp = HomePage(self.driver)
+        hp.click_send_btn()
+        hp.click_quick_send_btn()
+        hp.switch_driver_to_active_tab()
+        sleep(5)
+
 
 if __name__ == "__main__":
     unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='../reports'))

@@ -1,0 +1,2 @@
+Delivery,Size,"Sender Name","Sender Email","Sender Phone","Sender Boxmachine","Recipient Name","Recipient Email","Recipient Phone","Recipient Boxmachine",Policy,Error
+BOXMACHINE,B,,dora@testmail.com,700600500,LDZ02M,Anna,anna@testmail.com,123456789,KAT01A,YES,"Pole wymagane"

@@ -33,5 +33,16 @@ class HomePage:
         actions.move_to_element(managerPaczek).perform()
         managerPaczek.click()
 
+    def click_send_btn(self):
+        actions = ActionChains(self.driver)
+        send = WebDriverWait(self.driver, 40).until(EC.presence_of_element_located(HomePageLocators.SEND_BTN))
+        actions.move_to_element(send).perform()
+
+    def click_quick_send_btn(self):
+        actions = ActionChains(self.driver)
+        quick_send = WebDriverWait(self.driver, 40).until(EC.element_to_be_clickable(HomePageLocators.QUICK_SEND_BTN))
+        actions.move_to_element(quick_send).perform()
+        quick_send.click()
+
     def switch_driver_to_active_tab(self):
         self.driver.switch_to.window(self.driver.window_handles[1])

@@ -4,8 +4,13 @@
     <list default="true" id="2cfa3d75-f852-4305-ac36-db208549941c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/locators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_inpost_registration.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_inpost_registration.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_suite.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_suite.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/home_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/quicksend_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/quicksend_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/register_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/register_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/base_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/base_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/incorrect_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/tests/incorrect_data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_inpost_navigation.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_inpost_navigation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_inpost_quick_send.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_inpost_quick_send.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +37,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="Python.test_inpost_logging">
+  <component name="RunManager" selected="Python tests.Unittests for test_inpost_quick_send.QuickSendTest.test_quicksend_negative_08___BOXMACHINE____A____Dorota____do____700600500____LDZ02M____Anna____anna_testmail_com____123456789____KAT01A____YES____Wartość_jest_za_krótka__Powinna_mieć_4_znaków_lub_więcej__Nieprawidłowy_adres_email___">
     <configuration name="test_inpost_logging" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="zaliczenie_selenium" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -46,27 +51,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/test_inpost_logging.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test_inpost_navigation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="zaliczenie_selenium" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="/usr/bin/python3.6" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/test_inpost_navigation.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -96,27 +80,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_page_loaded_successfully" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="zaliczenie_selenium" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/test_page_loaded_successfully.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="test_suite" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="zaliczenie_selenium" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -138,13 +101,41 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests for test_inpost_quick_send.QuickSendTest.test_quicksend_negative_08___BOXMACHINE____A____Dorota____do____700600500____LDZ02M____Anna____anna_testmail_com____123456789____KAT01A____YES____Wartość_jest_za_krótka__Powinna_mieć_4_znaków_lub_więcej__Nieprawidłowy_adres_email___" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="zaliczenie_selenium" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_inpost_quick_send.QuickSendTest.test_quicksend_negative_08___BOXMACHINE____A____Dorota____do____700600500____LDZ02M____Anna____anna_testmail_com____123456789____KAT01A____YES____Wartość_jest_za_krótka__Powinna_mieć_4_znaków_lub_więcej__Nieprawidłowy_adres_email___&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in test_inpost_quick_send.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="zaliczenie_selenium" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_inpost_quick_send.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests in test_inpost_quick_send.py" />
+        <item itemvalue="Python tests.Unittests for test_inpost_quick_send.QuickSendTest.test_quicksend_negative_08___BOXMACHINE____A____Dorota____do____700600500____LDZ02M____Anna____anna_testmail_com____123456789____KAT01A____YES____Wartość_jest_za_krótka__Powinna_mieć_4_znaków_lub_więcej__Nieprawidłowy_adres_email___" />
         <item itemvalue="Python.test_inpost_logging" />
         <item itemvalue="Python.test_suite" />
         <item itemvalue="Python.test_inpost_registration" />
-        <item itemvalue="Python.test_page_loaded_successfully" />
-        <item itemvalue="Python.test_inpost_navigation" />
       </list>
     </recent_temporary>
   </component>
@@ -162,6 +153,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="67" y="111" width="1843" height="770" key="#Unittests_for_test_inpost_quick_send.QuickSendTest.test_quicksend_negative_08___BOXMACHINE____A____Dorota____do____700600500____LDZ02M____Anna____anna_testmail_com____123456789____KAT01A____YES____Wartość_jest_za_krótka__Powinna_mieć_4_znaków_lub_więcej__Nieprawidłowy_adres_email___" timestamp="1589231983017">
+      <screen x="67" y="27" width="1853" height="940" />
+    </state>
+    <state x="67" y="111" width="1843" height="770" key="#Unittests_for_test_inpost_quick_send.QuickSendTest.test_quicksend_negative_08___BOXMACHINE____A____Dorota____do____700600500____LDZ02M____Anna____anna_testmail_com____123456789____KAT01A____YES____Wartość_jest_za_krótka__Powinna_mieć_4_znaków_lub_więcej__Nieprawidłowy_adres_email___/67.27.1853.940@67.27.1853.940" timestamp="1589231983017" />
     <state x="655" y="86" width="666" height="819" key="#inpost_rejestracja" timestamp="1588185661874">
       <screen x="67" y="27" width="1853" height="940" />
     </state>
@@ -182,22 +177,22 @@
       <screen x="67" y="27" width="1853" height="940" />
     </state>
     <state width="1328" height="506" key="DebuggerActiveHint/67.27.1853.940@67.27.1853.940" timestamp="1588185702024" />
-    <state width="1830" height="375" key="GridCell.Tab.0.bottom" timestamp="1588956661511">
+    <state width="1830" height="375" key="GridCell.Tab.0.bottom" timestamp="1589232041449">
       <screen x="67" y="27" width="1853" height="940" />
     </state>
-    <state width="1830" height="375" key="GridCell.Tab.0.bottom/67.27.1853.940@67.27.1853.940" timestamp="1588956661511" />
-    <state width="1830" height="375" key="GridCell.Tab.0.center" timestamp="1588956661509">
+    <state width="1830" height="375" key="GridCell.Tab.0.bottom/67.27.1853.940@67.27.1853.940" timestamp="1589232041449" />
+    <state width="1830" height="375" key="GridCell.Tab.0.center" timestamp="1589232041447">
       <screen x="67" y="27" width="1853" height="940" />
     </state>
-    <state width="1830" height="375" key="GridCell.Tab.0.center/67.27.1853.940@67.27.1853.940" timestamp="1588956661509" />
-    <state width="1830" height="375" key="GridCell.Tab.0.left" timestamp="1588956661508">
+    <state width="1830" height="375" key="GridCell.Tab.0.center/67.27.1853.940@67.27.1853.940" timestamp="1589232041447" />
+    <state width="1830" height="375" key="GridCell.Tab.0.left" timestamp="1589232041446">
       <screen x="67" y="27" width="1853" height="940" />
     </state>
-    <state width="1830" height="375" key="GridCell.Tab.0.left/67.27.1853.940@67.27.1853.940" timestamp="1588956661508" />
-    <state width="1830" height="375" key="GridCell.Tab.0.right" timestamp="1588956661510">
+    <state width="1830" height="375" key="GridCell.Tab.0.left/67.27.1853.940@67.27.1853.940" timestamp="1589232041446" />
+    <state width="1830" height="375" key="GridCell.Tab.0.right" timestamp="1589232041448">
       <screen x="67" y="27" width="1853" height="940" />
     </state>
-    <state width="1830" height="375" key="GridCell.Tab.0.right/67.27.1853.940@67.27.1853.940" timestamp="1588956661510" />
+    <state width="1830" height="375" key="GridCell.Tab.0.right/67.27.1853.940@67.27.1853.940" timestamp="1589232041448" />
     <state width="1830" height="298" key="GridCell.Tab.1.bottom" timestamp="1588931030412">
       <screen x="67" y="27" width="1853" height="940" />
     </state>
@@ -230,5 +225,16 @@
       <screen x="67" y="27" width="1853" height="940" />
     </state>
     <state x="826" y="290" width="324" height="412" key="svn.repositoryBrowser/67.27.1853.940@67.27.1853.940" timestamp="1588953669699" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pages/quicksend_page.py</url>
+          <line>116</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -31,9 +31,9 @@ class RegisterPage:
         WebDriverWait(self.driver, 20).until(EC.presence_of_element_located(RegisterPageLocators.PASSWORD_REPEAT_INPUT)).send_keys(repeat_password)
 
     def fill_paczkomat(self, paczkomat):
-        WebDriverWait(self.driver, 40).until(EC.presence_of_element_located(RegisterPageLocators.PACZKOMAT_INPUT)).send_keys(paczkomat)
-        WebDriverWait(self.driver, 40).until(EC.presence_of_element_located(RegisterPageLocators.PACZKOMAT_LIST))
-        WebDriverWait(self.driver, 40).until(EC.presence_of_element_located(RegisterPageLocators.PACZKOMAT_INPUT)).send_keys(Keys.ENTER)
+        WebDriverWait(self.driver, 40).until(EC.presence_of_element_located(RegisterPageLocators.BOXMACHINE_INPUT)).send_keys(paczkomat)
+        WebDriverWait(self.driver, 40).until(EC.presence_of_element_located(RegisterPageLocators.BOXMACHINE_LIST))
+        WebDriverWait(self.driver, 40).until(EC.presence_of_element_located(RegisterPageLocators.BOXMACHINE_INPUT)).send_keys(Keys.ENTER)
 
     def agree_to_newsletter(self):
         WebDriverWait(self.driver, 40).until(EC.presence_of_element_located(RegisterPageLocators.CHECKBOX_BTN)).click()
