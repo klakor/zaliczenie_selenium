@@ -1,7 +1,7 @@
 import os
 
 from pages.home_page import HomePage
-from tests.base_test import BaseTestQuickSend
+from tests.base_test import BaseTestQuickSend, BaseTestHome
 from pages.quicksend_page import QuickSendPage
 import unittest
 import HtmlTestRunner
@@ -20,8 +20,23 @@ def get_data(file_name):
         rows.append(row)
     return rows
 
+
+class NavigationTest(BaseTestHome):
+    def test_navigate_to_quicksend_page(self):
+        """Test przechodzenia na stronę szybkie nadanie"""
+        header_pl = "Szybkie Nadania"
+        header_ang = "Quick Send"
+        hp = HomePage(self.driver)
+        hp.click_send_btn()
+        hp.click_quick_send_btn()
+        hp.switch_driver_to_active_tab()
+
+        qsp = QuickSendPage(self.driver)
+        qsp.verify_quicksend_page_loaded_succesfully(header_pl, header_ang)
+        sleep(5)
+
 @ddt
-class QuickSendTest(BaseTestQuickSend):
+class QuickSendNegative(BaseTestQuickSend):
     """
     Testy strony Szybkie Nadania
     """
@@ -31,8 +46,6 @@ class QuickSendTest(BaseTestQuickSend):
     def test_quicksend_negative(self, delivery, size, send_name, send_email, send_phone, send_boxmachine, rec_name, rec_email, rec_phone, rec_boxmachine, policy, error):
         """Test szybkiego nadania paczki"""
         expected_errors = [error]
-        if "|" in error:
-            expected_errors = error.split("|")
 
         qsp = QuickSendPage(self.driver)
         qsp.language()

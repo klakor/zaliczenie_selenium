@@ -111,7 +111,18 @@ class QuickSendPage:
         visible_errors = []
         for e in error_notices:
             if e.is_displayed():
-                visible_errors.append(e.text.replace(" \n", " "))
+                visible_errors.append(e.text.replace("\n", " "))
         print("Error ze strony: ", visible_errors)
         print("Error z testu: ", error)
         assert visible_errors == error
+
+    def verify_quicksend_page_loaded_succesfully(self, header_pl, header_ang):
+        header = self.driver.find_element(*QuickSendPageLocators.HEADER)
+        if header.is_displayed():
+            header = header.text.strip()
+        if header == header_pl:
+            assert True
+        elif header == header_ang:
+            assert True
+        else:
+            assert False

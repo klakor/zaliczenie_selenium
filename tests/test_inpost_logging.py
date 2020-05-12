@@ -1,5 +1,7 @@
 import os
-from tests.base_test import BaseTestLogin
+
+from pages.home_page import HomePage
+from tests.base_test import BaseTestLogin, BaseTestHome
 from pages.login_page import LoginPage
 import unittest
 import csv
@@ -17,6 +19,21 @@ def get_data(file_name):
         rows.append(row)
     return rows
 
+
+class NavigationTest(BaseTestHome):
+    def test_navigate_to_login_page(self):
+        """Test przechodzenia na stronę manager paczek"""
+        header_text = ("Zaloguj się do swojego konta")
+
+        hp = HomePage(self.driver)
+        # hp.close_covid_popup()
+        hp.click_sign_in_btn()
+        hp.click_manager_paczek_btn()
+        hp.switch_driver_to_active_tab()
+
+        lp = LoginPage(self.driver)
+        # lp.refresh()
+        lp.verify_login_page_loaded_successfully(header_text)
 
 @ddt
 class LoggingNegative(BaseTestLogin):

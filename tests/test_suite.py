@@ -1,7 +1,7 @@
-from test_page_loaded_successfully import LoginPageTest, HomePageTest
-from test_inpost_navigation import NavigationTest
-from test_inpost_registration import RegistrationTest
-from test_inpost_logging import LoggingNegative, LoggingPositive
+from test_inpost_homepage import HomePageTest
+from test_inpost_registration import RegistrationTest, NavigationTest
+from test_inpost_logging import LoggingNegative, LoggingPositive, NavigationTest
+from test_inpost_quicksend import NavigationTest, QuickSendNegative
 import HtmlTestRunner
 
 import unittest
@@ -16,12 +16,14 @@ class TestSuite(unittest.TestSuite):
         suite = unittest.TestSuite()
         # Nazwa klasy('nazwa testu')
         suite.addTest(HomePageTest('test_home_page_loaded_successfully'))
-        suite.addTest(LoginPageTest('test_login_page_loaded_succesfully'))
-        suite.addTest(NavigationTest('test_navigate_to_login_page'))
         suite.addTest(NavigationTest('test_navigate_to_register_page'))
+        suite.addTest(RegistrationTest('test_registration'))
+        suite.addTest(NavigationTest('test_navigate_to_login_page'))
         suite.addTest(LoggingNegative('test_logging_negative'))
         suite.addTest(LoggingPositive('test_logging_positive'))
-        suite.addTest(RegistrationTest('test_registration'))
+        suite.addTest(NavigationTest('test_navigate_to_quicksend_page'))
+        suite.addTest(QuickSendNegative('test_quicksend_negative'))
+
 
         return suite
 

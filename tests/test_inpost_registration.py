@@ -1,6 +1,10 @@
 import os
+
+from pages.login_page import LoginPage
 from tests.base_test import BaseTestRegister
+from tests.base_test import BaseTestHome
 from pages.register_page import RegisterPage
+from pages.home_page import HomePage
 import unittest
 import HtmlTestRunner
 import csv
@@ -16,6 +20,25 @@ def get_data(file_name):
     for row in reader:
         rows.append(row)
     return rows
+
+
+class NavigationTest(BaseTestHome):
+    def test_navigate_to_register_page(self):
+        """Test przechodzenia na stronę rejestracji użytkownika"""
+        header_text = ("Rejestracja")
+
+        hp = HomePage(self.driver)
+        # hp.close_covid_popup()
+        hp.click_sign_in_btn()
+        hp.click_manager_paczek_btn()
+        hp.switch_driver_to_active_tab()
+
+        lp = LoginPage(self.driver)
+        # lp.refresh()
+        lp.click_register_btn()
+
+        rp = RegisterPage(self.driver)
+        rp.verify_register_page_loaded_successfully(header_text)
 
 
 @ddt
