@@ -2,7 +2,7 @@ from selenium.webdriver.common.by import By
 
 
 class HomePageLocators():
-    """ Selektory strony głównej"""
+    """ Home page locators"""
     COVID_POPUP = (By.XPATH, "//div[@id='popup-window']")
     COVID_POPUP_CLOSE_BTN = (By.XPATH, "//a[@id='popup-close']")
     LOG_IN_BTN = (By.XPATH, "//button[@class='btn--primary -login']")
@@ -12,7 +12,7 @@ class HomePageLocators():
 
 
 class LoginPageLocators():
-    """ Selektory strony logowania"""
+    """ Login page locators"""
     LOGGING_PAGE_HEADER = (By.XPATH, "//div[@class='col-12 col-md-4 offset-md-2']/header/h1")
     EMAIL_INPUT = (By.XPATH, "//input[@id='input_login']")
     PASSWORD_INPUT = (By.XPATH, "//input[@id='input_password']")
@@ -26,7 +26,7 @@ class LoginPageLocators():
 
 
 class RegisterPageLocators():
-    """ Selektory strony Rejestracja"""
+    """ Register page locators"""
     HEADER = (By.XPATH, "//div[@class='col-12 col-sm-10 offset-sm-1']/header/h1")
     EMAIL_INPUT = (By.XPATH, "//input[@id='input_email']")
     NAME_INPUT = (By.XPATH, "//input[@id='input_first_name']")
@@ -42,7 +42,7 @@ class RegisterPageLocators():
 
 
 class QuickSendPageLocators():
-    """Selektory strony Szybkie Nadanie"""
+    """Quick send page locators"""
     HEADER = (By.XPATH, "//h1[@class='page-title text-center']")
     LANGUAGE = (By.XPATH, "//div[@class='float-right lang']")
     DELIVERY_BOXMACHINE_RADIO = (By.XPATH, "(//span[@class='input-checkmark'])[1]")

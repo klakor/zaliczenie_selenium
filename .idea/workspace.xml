@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2cfa3d75-f852-4305-ac36-db208549941c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/tests/test_inpost_quicksend.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_inpost_quicksend.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/locators.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
