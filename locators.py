@@ -1,7 +1,7 @@
 from selenium.webdriver.common.by import By
 
 
-class HomePageLocators():
+class HomePageLocators:
     """ Home page locators"""
     COVID_POPUP = (By.XPATH, "//div[@id='popup-window']")
     COVID_POPUP_CLOSE_BTN = (By.XPATH, "//a[@id='popup-close']")
@@ -11,7 +11,7 @@ class HomePageLocators():
     QUICK_SEND_BTN = (By.XPATH, "//ul[@class='submenu--list--desktop submenuListDesktop']//a[@title='Nadaj przesyłkę']")
 
 
-class LoginPageLocators():
+class LoginPageLocators:
     """ Login page locators"""
     LOGGING_PAGE_HEADER = (By.XPATH, "//div[@class='col-12 col-md-4 offset-md-2']/header/h1")
     EMAIL_INPUT = (By.XPATH, "//input[@id='input_login']")
@@ -22,10 +22,9 @@ class LoginPageLocators():
     REGISTRATION_BTN = (By.XPATH, "//a[@class='register']")
     COVID_POPUP_CLOSE_BTN = (By.XPATH, "//div[@title='Koronawirus']/i")
     LOGGED_USER = (By.XPATH, "//span[@class='user-email p-1']")
-    LOGGING_ERROR = (By.XPATH, "//ul[@class='errors']/li")
 
 
-class RegisterPageLocators():
+class RegisterPageLocators:
     """ Register page locators"""
     HEADER = (By.XPATH, "//div[@class='col-12 col-sm-10 offset-sm-1']/header/h1")
     EMAIL_INPUT = (By.XPATH, "//input[@id='input_email']")
@@ -41,7 +40,7 @@ class RegisterPageLocators():
     REGISTRATION_ERRORS = (By.XPATH, "//ul[@class='errors']//li")
 
 
-class QuickSendPageLocators():
+class QuickSendPageLocators:
     """Quick send page locators"""
     HEADER = (By.XPATH, "//h1[@class='page-title text-center']")
     LANGUAGE = (By.XPATH, "//div[@class='float-right lang']")

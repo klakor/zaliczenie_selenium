@@ -12,7 +12,7 @@ class TestSuite(unittest.TestSuite):
     All inpost.pl tests
     """
 
-    def suite():
+    def suite(self):
         suite = unittest.TestSuite()
         # Class name('test name')
         suite.addTest(HomePageTest('test_home_page_loaded_successfully'))
@@ -23,7 +23,6 @@ class TestSuite(unittest.TestSuite):
         suite.addTest(LoggingPositive('test_logging_positive'))
         suite.addTest(NavigationTest('test_navigate_to_quicksend_page'))
         suite.addTest(QuickSendNegative('test_quicksend_negative'))
-
 
         return suite
 

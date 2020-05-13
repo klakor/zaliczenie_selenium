@@ -1,29 +1,17 @@
-import os
-
-from pages.home_page import HomePage
-from tests.base_test import BaseTestLogin, BaseTestHome
-from pages.login_page import LoginPage
 import unittest
-import csv
+
 from ddt import ddt, data, unpack
 
-
-# importing data from *csv file:
-def get_data(file_name):
-    rows = []
-    data_file = open(os.path.join(os.path.dirname(__file__), file_name), 'rt')
-    reader = csv.reader(data_file)
-    # Skipping the first row:
-    next(reader, None)
-    for row in reader:
-        rows.append(row)
-    return rows
+from pages.home_page import HomePage
+from pages.login_page import LoginPage
+from tests.base_test import BaseTestLogin, BaseTestHome
+from utils.utils import parse_expected_errors, get_data
 
 
 class NavigationTest(BaseTestHome):
     def test_navigate_to_login_page(self):
         """Testing navigation from the home page to the login page"""
-        header_text = ("Zaloguj się do swojego konta")
+        header_text = "Zaloguj się do swojego konta"
 
         hp = HomePage(self.driver)
         # hp.close_covid_popup()
@@ -35,6 +23,7 @@ class NavigationTest(BaseTestHome):
         # lp.refresh()
         lp.verify_login_page_loaded_successfully(header_text)
 
+
 @ddt
 class LoggingNegative(BaseTestLogin):
     """
@@ -44,9 +33,7 @@ class LoggingNegative(BaseTestLogin):
     @unpack
     def test_logging_negative(self, email, password, error):
         """Testing the new user's logging - negative"""
-        expected_errors = [error]
-        if "|" in error:
-            expected_errors = error.split("|")
+        expected_errors = parse_expected_errors(error)
 
         lp = LoginPage(self.driver)
         lp.fill_email(email)
@@ -61,8 +48,8 @@ class LoggingPositive(BaseTestLogin):
     """
     def test_logging_positive(self):
         """Testing the new user's logging - positive"""
-        email = ("cetojiy960@tmajre.com")
-        password = ("H@slo101")
+        email = "cetojiy960@tmajre.com"
+        password = "H@slo101"
 
         lp = LoginPage(self.driver)
         lp.fill_email(email)

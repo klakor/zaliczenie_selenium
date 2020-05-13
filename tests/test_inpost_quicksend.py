@@ -1,24 +1,13 @@
-import os
-
-from pages.home_page import HomePage
-from tests.base_test import BaseTestQuickSend, BaseTestHome
-from pages.quicksend_page import QuickSendPage
 import unittest
-import HtmlTestRunner
-import csv
-from ddt import ddt, data, unpack
 from time import sleep
 
-# pobieranie danych z pliku
-def get_data(file_name):
-    rows = []
-    data_file = open(os.path.join(os.path.dirname(__file__), file_name), 'rt')
-    reader = csv.reader(data_file)
-    # Pomijam pierwszy wiersz
-    next(reader, None)
-    for row in reader:
-        rows.append(row)
-    return rows
+import HtmlTestRunner
+from ddt import ddt, data, unpack
+
+from pages.home_page import HomePage
+from pages.quicksend_page import QuickSendPage
+from tests.base_test import BaseTestQuickSend, BaseTestHome
+from utils.utils import parse_expected_errors, get_data
 
 
 class NavigationTest(BaseTestHome):
@@ -35,6 +24,7 @@ class NavigationTest(BaseTestHome):
         qsp.verify_quicksend_page_loaded_succesfully(header_pl, header_ang)
         sleep(5)
 
+
 @ddt
 class QuickSendNegative(BaseTestQuickSend):
     """
@@ -45,9 +35,7 @@ class QuickSendNegative(BaseTestQuickSend):
     @unpack
     def test_quicksend_negative(self, delivery, size, send_name, send_email, send_phone, send_boxmachine, rec_name, rec_email, rec_phone, rec_boxmachine, policy, error):
         """Testing quick send - negative"""
-        expected_errors = [error]
-        if "|" in error:
-            expected_errors = error.split("|")
+        expected_errors = parse_expected_errors(error)
 
         qsp = QuickSendPage(self.driver)
         qsp.language()

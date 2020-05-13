@@ -32,7 +32,9 @@ class LoginPage:
         username = self.driver.find_element(*LoginPageLocators.LOGGED_USER)
         if username.is_displayed():
             visible_username = username.text.strip()
-        assert visible_username == email
+            assert visible_username == email
+        else:
+            assert False, "User not displayed, logging failed"
 
     def verify_is_logging_failed(self, error):
         WebDriverWait(self.driver, 40).until(EC.presence_of_element_located(LoginPageLocators.LOGGING_ERROR))
@@ -41,9 +43,7 @@ class LoginPage:
         for e in error_notices:
             if e.is_displayed():
                 visible_errors.append(e.text)
-        print('error ze strony ', visible_errors)
-        print('error z testu', error)
-        assert visible_errors == error
+        assert visible_errors == error, "expected: " + error + ", actual: " + visible_errors
 
     def click_log_in_by_allegro(self):
         pass

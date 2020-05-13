@@ -1,25 +1,14 @@
-import os
-
-from pages.login_page import LoginPage
-from tests.base_test import BaseTestRegister
-from tests.base_test import BaseTestHome
-from pages.register_page import RegisterPage
-from pages.home_page import HomePage
 import unittest
+
 import HtmlTestRunner
-import csv
 from ddt import ddt, data, unpack
 
-# importing data from a *csv file:
-def get_data(file_name):
-    rows = []
-    data_file = open(os.path.join(os.path.dirname(__file__), file_name), 'rt')
-    reader = csv.reader(data_file)
-    # Skipping the first row:
-    next(reader, None)
-    for row in reader:
-        rows.append(row)
-    return rows
+from pages.home_page import HomePage
+from pages.login_page import LoginPage
+from pages.register_page import RegisterPage
+from tests.base_test import BaseTestHome
+from tests.base_test import BaseTestRegister
+from utils.utils import parse_expected_errors, get_data
 
 
 class NavigationTest(BaseTestHome):
@@ -27,7 +16,7 @@ class NavigationTest(BaseTestHome):
         """
         Testing navigation from the home page to the register page
         """
-        header_text = ("Rejestracja")
+        header_text = "Rejestracja"
 
         hp = HomePage(self.driver)
         # hp.close_covid_popup()        # popup showed at the beginning of the project
@@ -52,9 +41,7 @@ class RegistrationTest(BaseTestRegister):
     @unpack
     def test_registration_negative(self, email, name, phone, zipcode, password, repeat_password, boxmachine, error):
         """Testing registration of a new user - negative"""
-        expected_errors = [error]
-        if "|" in error:
-            expected_errors = error.split("|")
+        expected_errors = parse_expected_errors(error)
 
         rp = RegisterPage(self.driver)
         rp.fill_email(email)

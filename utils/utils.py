@@ -1,4 +1,3 @@
-import os
 import csv
 
 
@@ -7,14 +6,15 @@ def get_data(file_name):
     rows = []
     data_file = open(file_name, 'rt')
     reader = csv.reader(data_file)
-    # Pomijam pierwszy wiersz
+    # skip the first row:
     next(reader, None)
     for row in reader:
         rows.append(row)
     return rows
 
 
-def error_split_text():
+def parse_expected_errors(error):
     expected_errors = [error]
     if "|" in error:
         expected_errors = error.split("|")
+    return expected_errors

@@ -1,6 +1,8 @@
-from tests.base_test import BaseTestHome, BaseTestLogin
 import unittest
+
 import HtmlTestRunner
+
+from tests.base_test import BaseTestHome
 
 
 class HomePageTest(BaseTestHome):

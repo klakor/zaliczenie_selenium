@@ -1,4 +1,5 @@
 import unittest
+
 from selenium import webdriver
 
 
@@ -45,6 +46,7 @@ class BaseTestRegister(unittest.TestCase):
 
     def tearDown(self):
         self.driver.quit()
+
 
 class BaseTestQuickSend(unittest.TestCase):
     """

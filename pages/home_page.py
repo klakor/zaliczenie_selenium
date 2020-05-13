@@ -29,9 +29,9 @@ class HomePage:
 
     def click_manager_paczek_btn(self):
         actions = ActionChains(self.driver)
-        managerPaczek = WebDriverWait(self.driver, 40).until(EC.element_to_be_clickable(HomePageLocators.MANAGER_BTN))
-        actions.move_to_element(managerPaczek).perform()
-        managerPaczek.click()
+        manager_paczek = WebDriverWait(self.driver, 40).until(EC.element_to_be_clickable(HomePageLocators.MANAGER_BTN))
+        actions.move_to_element(manager_paczek).perform()
+        manager_paczek.click()
 
     def click_send_btn(self):
         actions = ActionChains(self.driver)
