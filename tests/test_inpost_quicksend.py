@@ -10,7 +10,7 @@ from tests.base_test import BaseTestQuickSend, BaseTestHome
 from utils.utils import parse_expected_errors, get_data
 
 
-class NavigationTest(BaseTestHome):
+class QuickSendNavigationTest(BaseTestHome):
     def test_navigate_to_quicksend_page(self):
         """Testing navigation from the home page to the quick send page"""
         header_pl = "Szybkie Nadania"

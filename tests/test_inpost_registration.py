@@ -11,7 +11,7 @@ from tests.base_test import BaseTestRegister
 from utils.utils import parse_expected_errors, get_data
 
 
-class NavigationTest(BaseTestHome):
+class RegistrationNavigationTest(BaseTestHome):
     def test_navigate_to_register_page(self):
         """
         Testing navigation from the home page to the register page
