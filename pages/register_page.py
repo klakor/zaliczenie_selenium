@@ -28,10 +28,10 @@ class RegisterPage:
         WebDriverWait(self.driver, 40).until(EC.presence_of_element_located(RegisterPageLocators.PASSWORD_INPUT)).send_keys(password)
 
     def repeat_password(self, repeat_password):
-        WebDriverWait(self.driver, 20).until(EC.presence_of_element_located(RegisterPageLocators.PASSWORD_REPEAT_INPUT)).send_keys(repeat_password)
+        WebDriverWait(self.driver, 20).until(EC.presence_of_element_located(RegisterPageLocators.PASSWORD_RPT_INPUT)).send_keys(repeat_password)
 
-    def fill_paczkomat(self, paczkomat):
-        WebDriverWait(self.driver, 40).until(EC.presence_of_element_located(RegisterPageLocators.BOXMACHINE_INPUT)).send_keys(paczkomat)
+    def fill_paczkomat(self, boxmachine):
+        WebDriverWait(self.driver, 40).until(EC.presence_of_element_located(RegisterPageLocators.BOXMACHINE_INPUT)).send_keys(boxmachine)
         WebDriverWait(self.driver, 40).until(EC.presence_of_element_located(RegisterPageLocators.BOXMACHINE_LIST))
         WebDriverWait(self.driver, 40).until(EC.presence_of_element_located(RegisterPageLocators.BOXMACHINE_INPUT)).send_keys(Keys.ENTER)
 
@@ -42,7 +42,7 @@ class RegisterPage:
         WebDriverWait(self.driver, 40).until(EC.presence_of_element_located(RegisterPageLocators.REGISTER_BTN)).click()
 
     def verify_register_page_loaded_successfully(self, header_text):
-        header = self.driver.find_element(*RegisterPageLocators.REGISTRATION_PAGE_HEADER)
+        header = self.driver.find_element(*RegisterPageLocators.HEADER)
         if header.is_displayed():
             header = header.text.strip()
         assert header == header_text
@@ -54,8 +54,6 @@ class RegisterPage:
         for e in error_notices:
             if e.is_displayed():
                 visible_errors.append(e.text)
+        # print("Error from the website: ", visible_errors)
+        # print("Error from the test: ", error)
         assert visible_errors == error
-        # print("Error ze strony:")
-        # print(visible_errors)
-        # print("Error z testu")
-        # print(error)

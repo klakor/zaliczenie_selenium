@@ -30,7 +30,7 @@ class QuickSendPage:
         elif delivery == "HOME":
             address.click()
         else:
-            print("Delivery not selected")
+            print("Delivery not selected, default delivery value")
 
     def choose_size(self, size):
         size_a = WebDriverWait(self.driver, 40).until(
@@ -112,8 +112,8 @@ class QuickSendPage:
         for e in error_notices:
             if e.is_displayed():
                 visible_errors.append(e.text.replace("\n", " "))
-        print("Error ze strony: ", visible_errors)
-        print("Error z testu: ", error)
+        print("Error from the website: ", visible_errors)
+        print("Error from the test: ", error)
         assert visible_errors == error
 
     def verify_quicksend_page_loaded_succesfully(self, header_pl, header_ang):

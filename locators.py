@@ -27,13 +27,13 @@ class LoginPageLocators():
 
 class RegisterPageLocators():
     """ Selektory strony Rejestracja"""
-    REGISTRATION_PAGE_HEADER = (By.XPATH, "//div[@class='col-12 col-sm-10 offset-sm-1']/header/h1")
+    HEADER = (By.XPATH, "//div[@class='col-12 col-sm-10 offset-sm-1']/header/h1")
     EMAIL_INPUT = (By.XPATH, "//input[@id='input_email']")
     NAME_INPUT = (By.XPATH, "//input[@id='input_first_name']")
     PHONE_INPUT = (By.XPATH, "//input[@id='input_customer_telephone']")
     ZIPCODE_INPUT = (By.XPATH, "//input[@id='input_postal_code']")
     PASSWORD_INPUT = (By.XPATH, "//input[@name='password']")
-    PASSWORD_REPEAT_INPUT = (By.XPATH, "//input[@name='repeatPassword']")
+    PASSWORD_RPT_INPUT = (By.XPATH, "//input[@name='repeatPassword']")
     BOXMACHINE_INPUT = (By.XPATH, "//ng-select[@id='input_preferred_easypack']//input")
     BOXMACHINE_LIST = (By.XPATH, "//div[@class='scrollable-content']")
     CHECKBOX_BTN = (By.XPATH, "//input[@id='t3-newsletter']")

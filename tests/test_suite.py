@@ -9,15 +9,15 @@ import unittest
 
 class TestSuite(unittest.TestSuite):
     """
-    Wszystkie testy strony Rejestracja
+    All inpost.pl tests
     """
 
     def suite():
         suite = unittest.TestSuite()
-        # Nazwa klasy('nazwa testu')
+        # Class name('test name')
         suite.addTest(HomePageTest('test_home_page_loaded_successfully'))
         suite.addTest(NavigationTest('test_navigate_to_register_page'))
-        suite.addTest(RegistrationTest('test_registration'))
+        suite.addTest(RegistrationTest('test_registration_negative'))
         suite.addTest(NavigationTest('test_navigate_to_login_page'))
         suite.addTest(LoggingNegative('test_logging_negative'))
         suite.addTest(LoggingPositive('test_logging_positive'))

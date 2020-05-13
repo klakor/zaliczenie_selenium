@@ -8,12 +8,12 @@ import csv
 from ddt import ddt, data, unpack
 
 
-# pobieranie danych z pliku
+# importing data from *csv file:
 def get_data(file_name):
     rows = []
     data_file = open(os.path.join(os.path.dirname(__file__), file_name), 'rt')
     reader = csv.reader(data_file)
-    # Pomijam pierwszy wiersz
+    # Skipping the first row:
     next(reader, None)
     for row in reader:
         rows.append(row)
@@ -22,7 +22,7 @@ def get_data(file_name):
 
 class NavigationTest(BaseTestHome):
     def test_navigate_to_login_page(self):
-        """Test przechodzenia na stronę manager paczek"""
+        """Testing navigation from the home page to the login page"""
         header_text = ("Zaloguj się do swojego konta")
 
         hp = HomePage(self.driver)
@@ -38,12 +38,12 @@ class NavigationTest(BaseTestHome):
 @ddt
 class LoggingNegative(BaseTestLogin):
     """
-    Testy strony Logowanie
+    Testing the login page
     """
-    @data(*get_data("logging.csv"))
+    @data(*get_data("data_logging_negative.csv"))
     @unpack
     def test_logging_negative(self, email, password, error):
-        """Test logowania użytkownika zakończony porażką"""
+        """Testing the new user's logging - negative"""
         expected_errors = [error]
         if "|" in error:
             expected_errors = error.split("|")
@@ -57,10 +57,10 @@ class LoggingNegative(BaseTestLogin):
 
 class LoggingPositive(BaseTestLogin):
     """
-    Testy strony Logowanie
+    Testing the login page
     """
     def test_logging_positive(self):
-        """Test logowania użytkownika zakończony pomyślnie"""
+        """Testing the new user's logging - positive"""
         email = ("cetojiy960@tmajre.com")
         password = ("H@slo101")
 

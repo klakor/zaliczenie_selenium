@@ -2,16 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2cfa3d75-f852-4305-ac36-db208549941c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/test_inpost_homepage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/locators.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/quicksend_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/quicksend_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/logging.csv" beforeDir="false" afterPath="$PROJECT_DIR$/tests/logging.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/quicksend_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/tests/quicksend_data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/register_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/register_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/incorrect_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/tests/data_registration_negative.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/logging.csv" beforeDir="false" afterPath="$PROJECT_DIR$/tests/data_logging_negative.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/quicksend_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/tests/data_quicksend_negative.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_inpost_homepage.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_inpost_homepage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_inpost_logging.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_inpost_logging.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_inpost_navigation.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_inpost_quick_send.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_inpost_quicksend.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_inpost_quicksend.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_inpost_quicksend.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_inpost_registration.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_inpost_registration.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_page_loaded_successfully.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_suite.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_suite.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +41,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="Python.test_suite">
+  <component name="RunManager" selected="Python tests.Unittests in test_inpost_quicksend.py">
     <configuration name="test_inpost_logging" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="zaliczenie_selenium" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -126,9 +128,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests in test_inpost_quicksend.py" />
         <item itemvalue="Python.test_suite" />
         <item itemvalue="Python tests.Unittests in test_inpost_homepage.py" />
-        <item itemvalue="Python tests.Unittests in test_inpost_quicksend.py" />
         <item itemvalue="Python tests.Unittests for test_inpost_quicksend.NavigationTest.test_navigate_to_quicksend_page" />
         <item itemvalue="Python.test_inpost_logging" />
       </list>
@@ -172,22 +174,22 @@
       <screen x="67" y="27" width="1853" height="940" />
     </state>
     <state width="1328" height="506" key="DebuggerActiveHint/67.27.1853.940@67.27.1853.940" timestamp="1588185702024" />
-    <state width="1830" height="375" key="GridCell.Tab.0.bottom" timestamp="1589300064805">
+    <state width="1807" height="130" key="GridCell.Tab.0.bottom" timestamp="1589382715027">
       <screen x="67" y="27" width="1853" height="940" />
     </state>
-    <state width="1830" height="375" key="GridCell.Tab.0.bottom/67.27.1853.940@67.27.1853.940" timestamp="1589300064805" />
-    <state width="1830" height="375" key="GridCell.Tab.0.center" timestamp="1589300064804">
+    <state width="1807" height="130" key="GridCell.Tab.0.bottom/67.27.1853.940@67.27.1853.940" timestamp="1589382715027" />
+    <state width="1807" height="130" key="GridCell.Tab.0.center" timestamp="1589382715026">
       <screen x="67" y="27" width="1853" height="940" />
     </state>
-    <state width="1830" height="375" key="GridCell.Tab.0.center/67.27.1853.940@67.27.1853.940" timestamp="1589300064804" />
-    <state width="1830" height="375" key="GridCell.Tab.0.left" timestamp="1589300064803">
+    <state width="1807" height="130" key="GridCell.Tab.0.center/67.27.1853.940@67.27.1853.940" timestamp="1589382715026" />
+    <state width="1807" height="130" key="GridCell.Tab.0.left" timestamp="1589382715025">
       <screen x="67" y="27" width="1853" height="940" />
     </state>
-    <state width="1830" height="375" key="GridCell.Tab.0.left/67.27.1853.940@67.27.1853.940" timestamp="1589300064803" />
-    <state width="1830" height="375" key="GridCell.Tab.0.right" timestamp="1589300064805">
+    <state width="1807" height="130" key="GridCell.Tab.0.left/67.27.1853.940@67.27.1853.940" timestamp="1589382715025" />
+    <state width="1807" height="130" key="GridCell.Tab.0.right" timestamp="1589382715027">
       <screen x="67" y="27" width="1853" height="940" />
     </state>
-    <state width="1830" height="375" key="GridCell.Tab.0.right/67.27.1853.940@67.27.1853.940" timestamp="1589300064805" />
+    <state width="1807" height="130" key="GridCell.Tab.0.right/67.27.1853.940@67.27.1853.940" timestamp="1589382715027" />
     <state width="1830" height="298" key="GridCell.Tab.1.bottom" timestamp="1588931030412">
       <screen x="67" y="27" width="1853" height="940" />
     </state>

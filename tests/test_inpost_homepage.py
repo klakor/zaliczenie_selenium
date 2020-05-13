@@ -5,11 +5,11 @@ import HtmlTestRunner
 
 class HomePageTest(BaseTestHome):
     """
-    Testy strony startowej inpost.pl
+    Testing home page - inpost.pl
     """
 
     def test_home_page_loaded_successfully(self):
-        """Test prawidłowego załadowania się strony domowej inpost.pl"""
+        """Testing if the home page inpost.pl is loaded succesfully"""
 
         assert "InPost dla Ciebie" in self.driver.title
 

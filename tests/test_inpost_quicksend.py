@@ -23,7 +23,7 @@ def get_data(file_name):
 
 class NavigationTest(BaseTestHome):
     def test_navigate_to_quicksend_page(self):
-        """Test przechodzenia na stronę szybkie nadanie"""
+        """Testing navigation from the home page to the quick send page"""
         header_pl = "Szybkie Nadania"
         header_ang = "Quick Send"
         hp = HomePage(self.driver)
@@ -38,13 +38,13 @@ class NavigationTest(BaseTestHome):
 @ddt
 class QuickSendNegative(BaseTestQuickSend):
     """
-    Testy strony Szybkie Nadania
+    Testing quick send page
     """
 
-    @data(*get_data("quicksend_data.csv"))
+    @data(*get_data("data_quicksend_negative.csv"))
     @unpack
     def test_quicksend_negative(self, delivery, size, send_name, send_email, send_phone, send_boxmachine, rec_name, rec_email, rec_phone, rec_boxmachine, policy, error):
-        """Test szybkiego nadania paczki"""
+        """Testing quick send - negative"""
         expected_errors = [error]
 
         qsp = QuickSendPage(self.driver)
