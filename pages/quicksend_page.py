@@ -64,7 +64,7 @@ class QuickSendPage:
         WebDriverWait(self.driver, 40).until(
             EC.presence_of_element_located(QuickSendPageLocators.SEND_BOXMACHINE_INPUT)).send_keys(send_boxmachine)
         sleep(2)
-        WebDriverWait(self.driver, 40).until(EC.presence_of_element_located(QuickSendPageLocators.BOXMACHINE_LIST))
+        WebDriverWait(self.driver, 40).until(EC.element_to_be_clickable(QuickSendPageLocators.BOXMACHINE_LIST))
         WebDriverWait(self.driver, 40).until(
             EC.presence_of_element_located(QuickSendPageLocators.SEND_BOXMACHINE_INPUT)).send_keys(Keys.ENTER)
 
@@ -84,7 +84,7 @@ class QuickSendPage:
         WebDriverWait(self.driver, 40).until(
             EC.presence_of_element_located(QuickSendPageLocators.REC_BOXMACHINE_INPUT)).send_keys(rec_boxmachine)
         sleep(2)
-        WebDriverWait(self.driver, 40).until(EC.presence_of_element_located(QuickSendPageLocators.BOXMACHINE_LIST))
+        WebDriverWait(self.driver, 40).until(EC.element_to_be_clickable(QuickSendPageLocators.BOXMACHINE_LIST))
         WebDriverWait(self.driver, 40).until(
             EC.presence_of_element_located(QuickSendPageLocators.REC_BOXMACHINE_INPUT)).send_keys(Keys.ENTER)
 

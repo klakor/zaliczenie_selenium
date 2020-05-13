@@ -46,6 +46,8 @@ class QuickSendNegative(BaseTestQuickSend):
     def test_quicksend_negative(self, delivery, size, send_name, send_email, send_phone, send_boxmachine, rec_name, rec_email, rec_phone, rec_boxmachine, policy, error):
         """Testing quick send - negative"""
         expected_errors = [error]
+        if "|" in error:
+            expected_errors = error.split("|")
 
         qsp = QuickSendPage(self.driver)
         qsp.language()
