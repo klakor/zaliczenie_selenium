@@ -2,9 +2,9 @@ import unittest
 
 from ddt import ddt, data, unpack
 
-from pages.home_page import HomePage
-from pages.login_page import LoginPage
-from tests.base_test import BaseTestLogin, BaseTestHome
+from pages.inpost_home_page import HomePage
+from pages.inpost_login_page import LoginPage
+from tests.test_inpost_base import BaseTestLogin, BaseTestHome
 from utils.utils import parse_expected_errors, get_data
 
 

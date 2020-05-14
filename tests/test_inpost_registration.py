@@ -3,11 +3,11 @@ import unittest
 import HtmlTestRunner
 from ddt import ddt, data, unpack
 
-from pages.home_page import HomePage
-from pages.login_page import LoginPage
-from pages.register_page import RegisterPage
-from tests.base_test import BaseTestHome
-from tests.base_test import BaseTestRegister
+from pages.inpost_home_page import HomePage
+from pages.inpost_login_page import LoginPage
+from pages.inpost_register_page import RegisterPage
+from tests.test_inpost_base import BaseTestHome
+from tests.test_inpost_base import BaseTestRegister
 from utils.utils import parse_expected_errors, get_data
 
 

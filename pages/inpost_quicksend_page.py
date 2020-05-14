@@ -1,6 +1,6 @@
 from selenium.webdriver import ActionChains
 
-from locators import QuickSendPageLocators
+from inpost_locators import QuickSendPageLocators
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys

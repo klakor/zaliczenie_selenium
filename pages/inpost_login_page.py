@@ -1,4 +1,4 @@
-from locators import LoginPageLocators
+from inpost_locators import LoginPageLocators
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 

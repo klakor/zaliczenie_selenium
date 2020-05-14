@@ -4,9 +4,9 @@ from time import sleep
 import HtmlTestRunner
 from ddt import ddt, data, unpack
 
-from pages.home_page import HomePage
-from pages.quicksend_page import QuickSendPage
-from tests.base_test import BaseTestQuickSend, BaseTestHome
+from pages.inpost_home_page import HomePage
+from pages.inpost_quicksend_page import QuickSendPage
+from tests.test_inpost_base import BaseTestQuickSend, BaseTestHome
 from utils.utils import parse_expected_errors, get_data
 
 

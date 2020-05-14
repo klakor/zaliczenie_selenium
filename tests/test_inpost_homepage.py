@@ -2,7 +2,7 @@ import unittest
 
 import HtmlTestRunner
 
-from tests.base_test import BaseTestHome
+from tests.test_inpost_base import BaseTestHome
 
 
 class HomePageTest(BaseTestHome):
