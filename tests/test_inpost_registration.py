@@ -8,7 +8,7 @@ from pages.inpost_login_page import LoginPage
 from pages.inpost_register_page import RegisterPage
 from tests.test_inpost_base import BaseTestHome
 from tests.test_inpost_base import BaseTestRegister
-from utils.utils import parse_expected_errors, get_data
+from utils.inpost_utils import parse_expected_errors, get_data
 
 
 class RegistrationNavigationTest(BaseTestHome):

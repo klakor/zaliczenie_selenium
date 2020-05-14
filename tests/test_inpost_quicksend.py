@@ -7,7 +7,7 @@ from ddt import ddt, data, unpack
 from pages.inpost_home_page import HomePage
 from pages.inpost_quicksend_page import QuickSendPage
 from tests.test_inpost_base import BaseTestQuickSend, BaseTestHome
-from utils.utils import parse_expected_errors, get_data
+from utils.inpost_utils import parse_expected_errors, get_data
 
 
 class QuickSendNavigationTest(BaseTestHome):

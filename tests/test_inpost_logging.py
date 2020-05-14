@@ -5,7 +5,7 @@ from ddt import ddt, data, unpack
 from pages.inpost_home_page import HomePage
 from pages.inpost_login_page import LoginPage
 from tests.test_inpost_base import BaseTestLogin, BaseTestHome
-from utils.utils import parse_expected_errors, get_data
+from utils.inpost_utils import parse_expected_errors, get_data
 
 
 class LoggingNavigationTest(BaseTestHome):
