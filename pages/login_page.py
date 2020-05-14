@@ -4,6 +4,9 @@ from selenium.webdriver.support import expected_conditions as EC
 
 
 class LoginPage:
+    """
+    Login Page
+    """
     def __init__(self, driver):
         self.driver = driver
 

@@ -5,7 +5,7 @@ from selenium import webdriver
 
 class BaseTestHome(unittest.TestCase):
     """
-    Klasa bazowa każdego testu rozpoczynającego się ze strony domowej
+    Base class of every test initialized on home page
     """
 
     def setUp(self):
@@ -20,7 +20,7 @@ class BaseTestHome(unittest.TestCase):
 
 class BaseTestLogin(unittest.TestCase):
     """
-    Klasa bazowa każdego testu rozpoczynającego się ze strony logowania
+    Base class of every test initialized on login page
     """
 
     def setUp(self):
@@ -35,7 +35,7 @@ class BaseTestLogin(unittest.TestCase):
 
 class BaseTestRegister(unittest.TestCase):
     """
-    Klasa bazowa każdego testu rozpoczynającego się ze strony logowania
+    KBase class of every test initialized on register page
     """
 
     def setUp(self):
@@ -50,7 +50,7 @@ class BaseTestRegister(unittest.TestCase):
 
 class BaseTestQuickSend(unittest.TestCase):
     """
-    Klasa bazowa każdego testu rozpoczynającego się ze strony szybkie nadanie
+    Base class of every test initialized on quick send page
     """
 
     def setUp(self):

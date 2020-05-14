@@ -5,7 +5,9 @@ from selenium.webdriver.support import expected_conditions as EC
 
 
 class RegisterPage:
-
+    """
+    Register Page
+    """
     def __init__(self, driver):
         self.driver = driver
 
@@ -54,6 +56,4 @@ class RegisterPage:
         for e in error_notices:
             if e.is_displayed():
                 visible_errors.append(e.text)
-        # print("Error from the website: ", visible_errors)
-        # print("Error from the test: ", error)
-        assert visible_errors == error
+        assert visible_errors == error, "expected: " + error + ", actual: " + visible_errors

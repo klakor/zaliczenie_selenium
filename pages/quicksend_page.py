@@ -8,6 +8,9 @@ from time import sleep
 
 
 class QuickSendPage:
+    """
+    Quick Send Page
+    """
     def __init__(self, driver):
         self.driver = driver
 
@@ -112,9 +115,7 @@ class QuickSendPage:
         for e in error_notices:
             if e.is_displayed():
                 visible_errors.append(e.text.replace("\n", " "))
-        print("Error from the website: ", visible_errors)
-        print("Error from the test: ", error)
-        assert visible_errors == error
+        assert visible_errors == error, "expected: " + error + ", actual: " + visible_errors
 
     def verify_quicksend_page_loaded_succesfully(self, header_pl, header_ang):
         header = self.driver.find_element(*QuickSendPageLocators.HEADER)

@@ -6,7 +6,7 @@ from locators import HomePageLocators
 
 class HomePage:
     """
-    Strona domowa
+    Home Page
     """
 
     def __init__(self, driver):
