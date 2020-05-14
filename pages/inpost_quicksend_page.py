@@ -49,7 +49,7 @@ class QuickSendPage:
         elif size == "C":
             size_c.click()
         else:
-            print("Size not selected")
+            print("Size not selected, default size")
 
     def fill_sender_name(self, send_name):
         WebDriverWait(self.driver, 40).until(
