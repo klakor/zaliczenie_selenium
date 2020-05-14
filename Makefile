@@ -1,7 +1,7 @@
 .PHONY: test
 
 deps:
-	pip install -r test_requirements.txt
+	pip install -r requirements.txt
 
 test:
 	PYTHONPATH=. python3 tests/test_suite.py
