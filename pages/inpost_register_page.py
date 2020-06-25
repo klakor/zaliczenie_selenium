@@ -37,6 +37,9 @@ class RegisterPage:
         WebDriverWait(self.driver, 40).until(EC.presence_of_element_located(RegisterPageLocators.BOXMACHINE_LIST))
         WebDriverWait(self.driver, 40).until(EC.presence_of_element_located(RegisterPageLocators.BOXMACHINE_INPUT)).send_keys(Keys.ENTER)
 
+    def choose_account_type(self):
+        WebDriverWait(self.driver, 40).until(EC.presence_of_element_located(RegisterPageLocators.ACCOUNT_TYPE_BTN)).click()
+
     def agree_to_newsletter(self):
         WebDriverWait(self.driver, 40).until(EC.presence_of_element_located(RegisterPageLocators.CHECKBOX_BTN)).click()
 

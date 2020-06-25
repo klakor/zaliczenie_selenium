@@ -32,7 +32,7 @@ class QuickSendNegative(BaseTestQuickSend):
     Testing quick send page
     """
 
-    @data(*get_data("data_quicksend_negative.csv"))
+    @data(*get_data("data_quicksend_negative_short.csv"))
     @unpack
     def test_quicksend_negative(self, delivery, size, send_name, send_email, send_phone, send_boxmachine, rec_name, rec_email, rec_phone, rec_boxmachine, policy, error):
         """Testing quick send - negative"""

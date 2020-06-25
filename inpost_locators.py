@@ -14,7 +14,7 @@ class HomePageLocators:
 
 class LoginPageLocators:
     """ Login page locators"""
-    LOGGING_PAGE_HEADER = (By.XPATH, "//div[@class='col-12 col-md-4 offset-md-2']/header/h1")
+    LOGGING_PAGE_HEADER = (By.XPATH, "//header[@class='mb-5']//h1")
     EMAIL_INPUT = (By.XPATH, "//input[@id='input_login']")
     PASSWORD_INPUT = (By.XPATH, "//input[@id='input_password']")
     LOG_IN_BTN = (By.XPATH, "//button[@id='submit_submit']")

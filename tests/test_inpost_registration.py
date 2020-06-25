@@ -38,7 +38,7 @@ class RegistrationTest(BaseTestRegister):
     Testing registration page
     """
 
-    @data(*get_data("data_registration_negative.csv"))
+    @data(*get_data("data_registration_negative_short.csv"))
     @unpack
     def test_registration_negative(self, email, name, phone, zipcode, password, repeat_password, boxmachine, error):
         """Testing registration of a new user - negative"""
@@ -52,6 +52,7 @@ class RegistrationTest(BaseTestRegister):
         rp.fill_password(password)
         rp.repeat_password(repeat_password)
         rp.fill_paczkomat(boxmachine)
+        rp.choose_account_type()
         rp.agree_to_newsletter()
         rp.send_registration_form()
         rp.verify_errors(expected_errors)
