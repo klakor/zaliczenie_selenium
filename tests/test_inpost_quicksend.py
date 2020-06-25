@@ -16,6 +16,7 @@ class QuickSendNavigationTest(BaseTestHome):
         header_pl = "Szybkie Nadania"
         header_ang = "Quick Send"
         hp = HomePage(self.driver)
+        hp.close_danger_alert_btn()
         hp.click_send_btn()
         hp.click_quick_send_btn()
         hp.switch_driver_to_active_tab()

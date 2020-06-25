@@ -24,6 +24,14 @@ class HomePage:
         except:
             print("popup is not visible")
 
+    def close_danger_alert_btn(self):
+        danger_alert = WebDriverWait(self.driver, 15).until(
+                EC.presence_of_element_located(HomePageLocators.DANGER_ALERT_CLOSE_BTN))
+        if danger_alert.is_enabled():
+                danger_alert.click()
+        else:
+            print("danger alert is not visible")
+
     def click_sign_in_btn(self):
         WebDriverWait(self.driver, 40).until(EC.presence_of_element_located(HomePageLocators.LOG_IN_BTN)).click()
 
