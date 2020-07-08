@@ -15,7 +15,7 @@ class LoggingNavigationTest(BaseTestHome):
 
         hp = HomePage(self.driver)
         # hp.close_covid_popup()
-        hp.close_danger_alert_btn()
+        #hp.close_danger_alert_btn()
         hp.click_sign_in_btn()
         hp.click_manager_paczek_btn()
         hp.switch_driver_to_active_tab()

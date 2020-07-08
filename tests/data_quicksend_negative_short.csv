@@ -1,6 +1,4 @@
 Delivery,Size,"Sender Name","Sender Email","Sender Phone","Sender Boxmachine","Recipient Name","Recipient Email","Recipient Phone","Recipient Boxmachine",Policy,Error
 BOXMACHINE,A,lalalalalalalalalalalalalalalalalalalalalalalalalala,dora@testmail.com,700600500,LDZ02M,Anna,anna@testmail.com,123456789,KAT01A,YES,"Ta wartość jest zbyt długa. Powinna mieć 50 znaków lub mniej."
-BOXMACHINE,A,Dorota,dora@testmail.com,"",LDZ02M,Anna,anna@testmail.com,123456789,KAT01A,YES,"Pole wymagane"
-BOXMACHINE,B,Dorota,dora@testmail.com,700600500,LDZ02M,Anna,ana,123456789,KAT01A,YES,"Wartość jest za krótka. Powinna mieć 4 znaków lub więcej. Nieprawidłowy adres email"
 BOXMACHINE,B,Dorota,dora@testmail.com,700600500,LDZ02M,Anna,anna@testmail.com,789,KAT01A,YES,"Nieprawidłowy numer telefonu."
 BOXMACHINE,C,Dorota,dora@testmail.com,700600500,LDZ02M,Anna,anna@testmail.com,123456789,KAT01A,,"Pole wymagane"
